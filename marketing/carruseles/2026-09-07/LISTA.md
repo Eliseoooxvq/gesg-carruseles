@@ -1,0 +1,27 @@
+# Carruseles 2026-09-07 — lista para publicar
+
+| # | Área | Título | Descripción | Hashtags |
+|---|---|---|---|---|
+| 01 | Defensa fiscal | El SAT publica dos listas negras y no son la misma | Mi nombre aparece en una lista del SAT qué hago. Hay dos listas públicas distintas y se confunden todo el tiempo: la de facturación simulada y la de contribuyentes con adeudos. No se salen igual y no pesan igual. Mándanos la foto del oficio y te decimos en cuál estás parado. | #impuestos #69b #defensafiscal #sat #tlaxcala |
+| 02 | Defensa fiscal | No toda revisión del SAT llega tocando tu puerta | Diferencia entre visita domiciliaria y revisión electrónica del SAT. El SAT tiene tres maneras distintas de revisarte y cada una se atiende diferente. Confundirlas es de los errores que más caro salen. Mándanos la foto del oficio y te decimos cuál traes. | #impuestos #defensafiscal #sat #chiautempan |
+| 03 | Defensa fiscal | Te embargaron y te dejaron los bienes en el local | Me embargaron el negocio pero las cosas siguen aquí. Cuando el ejecutor deja los bienes en tu poder te nombra depositario, y eso cambia lo que puedes hacer con ellos. El acta de ese día es la que decide. Mándanos la foto del acta y te decimos si tiene defensa. | #impuestos #creditofiscal #defensafiscal #sat #tlaxcala |
+| 04 | Defensa fiscal | Vendiste tu parte de la empresa y nadie avisó al SAT | Me llegó el SAT por una empresa que ya vendí. Si el cambio de socios no se avisó, en los registros del SAT sigues ahí. Y ahí es donde la autoridad toca cuando busca responsables. Mándanos la foto del citatorio y te decimos si tiene defensa. | #impuestos #defensafiscal #sat #puebla |
+| 05 | Defensa fiscal | El botón de aclaración del portal no es defenderte | Metí una aclaración al SAT y no me han contestado. La aclaración del portal y un medio de defensa no son la misma ventanilla ni sirven para lo mismo. Escoger mal cuesta tiempo y, a veces, cuesta la versión de los hechos. Mándanos la foto del documento y te decimos qué te toca. | #impuestos #defensafiscal #creditofiscal #sat #chiautempan |
+| 06 | Contabilidad | Te pagaron el mes pasado y falta el complemento de pago | Qué es el complemento de pago y cuándo se emite. Si facturas a crédito o en abonos, la operación no termina con la factura: falta el complemento que avisa que ya te pagaron. Sin él, tu cliente no deduce. Si no sabes si los tuyos están al día, escríbenos y lo revisamos. | #contabilidad #cfdi #facturacion #apizaco |
+| 07 | Contabilidad | Cuatro datos que tienen que ir idénticos a tu constancia | Por qué me rechazan la factura si di bien mi RFC. El RFC ya no es lo único: nombre exacto, código postal, régimen y uso del CFDI tienen que empatar con tu constancia. Cualquiera de los cuatro tumba la factura. Si no sabes cuál traes mal, escríbenos y lo revisamos contigo. | #contabilidad #cfdi #facturacion #deducciones #chiautempan |
+| 08 | Contabilidad | Tienes la factura pero pagaste en efectivo y no se deduce | Pagué en efectivo y tengo factura, se puede deducir. Arriba de cierto monto el pago en efectivo tumba la deducción aunque el CFDI esté perfecto, y con gasolina aplica sin importar cuánto sea. Si quieres saber cuánto estás perdiendo por ahí, escríbenos. | #contabilidad #deducciones #declaracionanual #tlaxcala |
+| 09 | Contabilidad | La contraseña ya no alcanza para la devolución automática | Por qué no me salió la devolución automática del SAT. Desde este año, arriba de cierto monto la declaración firmada solo con contraseña saca tu saldo a favor de la devolución automática. La e.firma vencida es el cuello de botella. Si no sabes si la tuya sigue vigente, escríbenos y lo vemos. | #contabilidad #declaracionanual #sat #puebla |
+| 10 | Contabilidad | Paquete 2027: el IEPS que se propone si vendes botanas o alcohol | Paquete económico 2027 IEPS botanas y bebidas alcohólicas. Se ha planteado ampliar el IEPS a alimentos con alto contenido de sodio y subirlo en bebidas con alcohol. Todavía no es ley, pero si eso es lo que vendes, conviene sacar números desde hoy. Si quieres ver cómo queda tu margen, escríbenos. | #impuestos #contabilidad #sat #apizaco |
+
+## Archivos
+
+01. `01-dos-listas-negras.html` — Defensa fiscal. Dueño que se enteró de que su nombre o el de un proveedor aparece publicado.
+02. `02-tres-formas-de-revisarte.html` — Defensa fiscal. Contribuyente que ya recibió algo del SAT y no sabe de qué tipo de revisión se trata.
+03. `03-te-dejaron-los-bienes.html` — Defensa fiscal. Dueño con diligencia de embargo ya practicada en su domicilio o negocio.
+04. `04-cambiaron-los-socios.html` — Defensa fiscal. Exsocio o exrepresentante al que le sigue llegando correspondencia de una empresa que ya no es suya.
+05. `05-aclaracion-no-es-defensa.html` — Defensa fiscal. El que ya movió algo por su cuenta en el portal y no sabe si sirvió.
+06. `06-complemento-de-pago.html` — Contabilidad. Negocio que factura a crédito o en parcialidades: talleres, proveedores, constructoras.
+07. `07-datos-de-tu-factura.html` — Contabilidad. Cualquiera que pide facturas y le rebotan, o que cambió de régimen y no avisó.
+08. `08-en-efectivo-no-se-deduce.html` — Contabilidad. Negocio chico que maneja caja en efectivo y cree que con la factura basta.
+09. `09-devolucion-con-efirma.html` — Contabilidad. Persona física con saldo a favor que hace su anual sola y no revisa su e.firma.
+10. `10-ieps-2027-lo-que-vendes.html` — Contabilidad. Abarrotes, vinaterías, tienditas y distribuidores que venden justo esos productos.

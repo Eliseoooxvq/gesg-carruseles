@@ -79,3 +79,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-07 · CT · Facturaste y no has cobrado: el impuesto se adelanta al cobro
 - 2026-09-07 · CT · 5 preguntas anuales para saber si tu contador te dice todo
 - 2026-09-07 · CT · "Sin factura sale más barato": la cuenta completa
+
+### Archivos HTML por carrusel — carpeta 2026-09-07/
+
+- 2026-09-07 · DF · El SAT publica dos listas negras y no son la misma
+- 2026-09-07 · DF · No toda revisión del SAT llega tocando tu puerta (visita, gabinete, electrónica)
+- 2026-09-07 · DF · Te embargaron y te dejaron los bienes: eres el depositario
+- 2026-09-07 · DF · Vendiste tu parte de la empresa y nadie avisó al SAT (padrón desactualizado)
+- 2026-09-07 · DF · El botón de aclaración del portal no es defenderte
+- 2026-09-07 · CT · Te pagaron el mes pasado y falta el complemento de pago
+- 2026-09-07 · CT · Cuatro datos que tienen que ir idénticos a tu constancia (nombre, CP, régimen, uso CFDI)
+- 2026-09-07 · CT · Tienes la factura pero pagaste en efectivo y no se deduce
+- 2026-09-07 · CT · La contraseña ya no alcanza para la devolución automática (e.firma)
+- 2026-09-07 · CT · Paquete 2027: el IEPS que se propone si vendes botanas o alcohol
