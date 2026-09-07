@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<title>Carrusel GESG · expediente</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Big+Shoulders+Display:wght@700;800;900&family=Courier+Prime:wght@400;700&display=swap">
+<style>
+/* =========================================================
+   CARRUSEL GESG · sistema "expediente"
+   La idea: que la lámina se vea como el papel del que habla.
+   Encabezado de oficio, folio tachado, sello de goma y
+   tipografía de máquina de escribir para lo burocrático,
+   contra tipografía de cartel para lo que sí importa.
+   1080 x 1350
+   ========================================================= */
+:root{
+  --negro:#0D0D0F;
+  --negro-2:#16161A;
+  --papel:#EDE9E1;      /* papel de oficio, no blanco */
+  --papel-2:#DCD6C9;
+  --rojo:#C0281F;       /* tinta de sello */
+  --gris:#7C7A74;
+  --gris-claro:#A8A49B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#3A3A3E;font-family:'Archivo',sans-serif;
+     display:flex;flex-direction:column;align-items:center;gap:26px;padding:26px}
+
+.lamina{width:1080px;height:1350px;position:relative;overflow:hidden;
+        display:flex;flex-direction:column;padding:72px 76px 216px}
+
+.oscura{background:var(--negro);color:var(--papel)}
+.clara{background:var(--papel);color:var(--negro)}
+
+/* ---- grano de papel ---- */
+.lamina::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:radial-gradient(rgba(255,255,255,.055) 1px,transparent 1px);
+  background-size:4px 4px;
+}
+.clara::after{background-image:radial-gradient(rgba(13,13,15,.075) 1px,transparent 1px)}
+
+/* ---- encabezado de oficio ---- */
+.oficio{
+  font-family:'Courier Prime',monospace;font-size:21px;letter-spacing:.06em;
+  display:flex;gap:22px;align-items:center;flex-wrap:wrap;
+  padding-bottom:20px;border-bottom:2px solid currentColor;
+  position:relative;z-index:3;
+}
+.oscura .oficio{color:var(--gris-claro);border-color:#2C2C31}
+.clara .oficio{color:var(--gris);border-color:var(--papel-2)}
+.tachon{display:inline-block;background:currentColor;width:112px;height:19px;
+        vertical-align:-2px;opacity:.85}
+.oficio .via{margin-left:auto;letter-spacing:.16em}
+
+/* ---- sello de goma ---- */
+.sello{
+  position:absolute;z-index:4;border:5px solid var(--rojo);color:var(--rojo);
+  font-family:'Courier Prime',monospace;font-weight:700;font-size:30px;
+  letter-spacing:.2em;padding:16px 26px;transform:rotate(-11deg);
+  opacity:.92;text-transform:uppercase;line-height:1;
+}
+.sello small{display:block;font-size:17px;letter-spacing:.12em;margin-top:9px;opacity:.9}
+.sello.arriba{top:250px;right:60px}
+.sello.abajo{bottom:180px;right:64px;transform:rotate(7deg)}
+
+/* ---- portada ---- */
+.hueco{margin-top:auto}
+h1{
+  font-family:'Big Shoulders Display',sans-serif;font-weight:900;
+  font-size:152px;line-height:.84;letter-spacing:-.012em;text-transform:uppercase;
+  position:relative;z-index:3;
+}
+h1 em{font-style:normal;color:var(--rojo)}
+.subhook{
+  font-family:'Courier Prime',monospace;font-size:29px;line-height:1.5;
+  margin-top:30px;color:var(--gris-claro);position:relative;z-index:3;max-width:26ch;
+}
+.clara .subhook{color:var(--gris)}
+
+/* ---- interiores ---- */
+.paso{
+  font-family:'Courier Prime',monospace;font-size:22px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--rojo);margin-bottom:26px;
+  position:relative;z-index:3;
+}
+h2{
+  font-family:'Big Shoulders Display',sans-serif;font-weight:800;
+  font-size:104px;line-height:.87;letter-spacing:-.008em;text-transform:uppercase;
+  margin-bottom:36px;position:relative;z-index:3;
+}
+.oscura h2{color:var(--papel)}
+p{font-size:39px;line-height:1.45;font-weight:500;max-width:23ch;position:relative;z-index:3}
+.oscura p{color:#B9B5AC}
+.clara p{color:#3A3833}
+p b{font-weight:700}
+.oscura p b{color:var(--papel)}
+.clara p b{color:var(--negro)}
+p .sub{background:linear-gradient(transparent 62%,rgba(192,40,31,.32) 62%);font-weight:700}
+
+/* ---- perforado ---- */
+.perfil{position:absolute;left:0;right:0;bottom:126px;z-index:2;
+        border-top:3px dashed currentColor;opacity:.22}
+
+/* ---- pie ---- */
+.pie{
+  position:absolute;left:76px;right:76px;bottom:56px;z-index:3;
+  display:flex;justify-content:space-between;align-items:baseline;
+  font-family:'Courier Prime',monospace;font-size:22px;letter-spacing:.1em;
+}
+.oscura .pie{color:var(--gris)}
+.clara .pie{color:var(--gris)}
+.pie b{font-weight:700;letter-spacing:.24em}
+.oscura .pie b{color:var(--papel)}
+.clara .pie b{color:var(--negro)}
+
+/* ---- cierre ---- */
+.cierre h2{font-size:118px;margin-bottom:0}
+.cierre h2 em{font-style:normal;color:var(--rojo)}
+.datos{margin-top:46px;padding-top:34px;border-top:3px solid #2C2C31;position:relative;z-index:3}
+.datos .tel{font-family:'Big Shoulders Display',sans-serif;font-weight:800;
+            font-size:76px;letter-spacing:.02em;color:var(--papel);line-height:1}
+.datos .web{font-family:'Courier Prime',monospace;font-size:30px;color:var(--rojo);
+            margin-top:16px;letter-spacing:.08em}
+.datos .dir{font-family:'Courier Prime',monospace;font-size:22px;color:var(--gris);
+            margin-top:22px;line-height:1.6}
+</style>
+</head>
+<body>
+
+<!-- ══════ 1 · PORTADA ══════ -->
+<section class="lamina oscura" data-document-role="page" data-label="Lamina 01">
+  <div class="oficio">OFICIO <span class="tachon"></span>/2026 &nbsp;·&nbsp; FOLIO <span class="tachon"></span><span class="via">NOTIFICADO</span></div>
+  <div class="sello arriba">Plazo<br>corriendo<small>desde la notificación</small></div>
+  <div class="hueco">
+    <h1>Le diste<br>timbrar<br>y <em>no jaló.</em></h1>
+    <p class="subhook">No es el sistema. Es tu sello.</p>
+  </div>
+  <div class="perfil"></div>
+  <div class="pie"><span><b>GESG</b> · DEFENSA FISCAL</span><span>01 / 06 →</span></div>
+</section>
+
+<!-- ══════ 2 ══════ -->
+<section class="lamina clara" data-document-role="page" data-label="Lamina 02">
+  <div class="oficio">EXPEDIENTE <span class="tachon"></span> &nbsp;·&nbsp; CHIAUTEMPAN, TLAX.<span class="via">EN TRÁMITE</span></div>
+  <div class="hueco">
+    <p class="paso">Lo que está pasando</p>
+    <h2>Te restringieron<br>el sello</h2>
+    <p>Y mientras esté así <b>no puedes facturar</b>. Si no facturas, no cobras. Un negocio aguanta eso semanas, no meses.</p>
+  </div>
+  <div class="perfil"></div>
+  <div class="pie"><span><b>GESG</b> · DEFENSA FISCAL</span><span>02 / 06 →</span></div>
+</section>
+
+<!-- ══════ 3 ══════ -->
+<section class="lamina oscura" data-document-role="page" data-label="Lamina 03">
+  <div class="oficio">EXPEDIENTE <span class="tachon"></span> &nbsp;·&nbsp; CHIAUTEMPAN, TLAX.<span class="via">EN TRÁMITE</span></div>
+  <div class="hueco">
+    <p class="paso">La parte que sí sirve</p>
+    <h2>Sí hay<br>procedimiento</h2>
+    <p>Existe una forma de aclararlo ante la autoridad. <b>No es automático y no se arregla solo</b>, pero se puede.</p>
+  </div>
+  <div class="perfil"></div>
+  <div class="pie"><span><b>GESG</b> · DEFENSA FISCAL</span><span>03 / 06 →</span></div>
+</section>
+
+<!-- ══════ 4 ══════ -->
+<section class="lamina clara" data-document-role="page" data-label="Lamina 04">
+  <div class="oficio">EXPEDIENTE <span class="tachon"></span> &nbsp;·&nbsp; CHIAUTEMPAN, TLAX.<span class="via">URGENTE</span></div>
+  <div class="sello abajo">Corre<br>el plazo</div>
+  <div class="hueco">
+    <p class="paso">Y esto casi nadie lo sabe</p>
+    <h2>El reloj ya<br>va corriendo</h2>
+    <p>No empezó cuando te diste cuenta: <span class="sub">empezó el día que te notificaron</span>.</p>
+  </div>
+  <div class="perfil"></div>
+  <div class="pie"><span><b>GESG</b> · DEFENSA FISCAL</span><span>04 / 06 →</span></div>
+</section>
+
+<!-- ══════ 5 ══════ -->
+<section class="lamina oscura" data-document-role="page" data-label="Lamina 05">
+  <div class="oficio">EXPEDIENTE <span class="tachon"></span> &nbsp;·&nbsp; CHIAUTEMPAN, TLAX.<span class="via">ADVERTENCIA</span></div>
+  <div class="hueco">
+    <p class="paso">Lo que no hay que hacer</p>
+    <h2>No factures<br>con el sello<br>de alguien</h2>
+    <p>Ni esperes a que se resuelva solo. <b>Eso convierte un trámite en un problema mucho más caro.</b></p>
+  </div>
+  <div class="perfil"></div>
+  <div class="pie"><span><b>GESG</b> · DEFENSA FISCAL</span><span>05 / 06 →</span></div>
+</section>
+
+<!-- ══════ 6 · CIERRE ══════ -->
+<section class="lamina oscura cierre" data-document-role="page" data-label="Lamina 06">
+  <div class="oficio">GESG DESPACHO CONTABLE <span class="via">ÁREA JURÍDICA</span></div>
+  <div class="hueco">
+    <h2>Mándanos la<br>foto del oficio.<br><em>Te decimos si<br>tiene defensa.</em></h2>
+    <div class="datos">
+      <div class="tel">246 469 9493</div>
+      <div class="web">despachogesg.com</div>
+      <div class="dir">Miguel Hernández 403 I, Col. El Alto · Chiautempan, Tlaxcala<br>Despacho contable con área jurídica propia · Atendemos Tlaxcala y Puebla</div>
+    </div>
+  </div>
+  <div class="pie"><span><b>GESG</b> · DEFENSA FISCAL</span><span>06 / 06</span></div>
+</section>
+
+</body>
+</html>
