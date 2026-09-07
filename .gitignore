@@ -1,0 +1,7 @@
+# Lo que entra y sale del renderizador es de trabajo, no del repositorio.
+entradas/
+salida/
+
+# Nunca, en un repositorio publico.
+.env*
+.claude/settings.local.json

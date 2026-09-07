@@ -1,0 +1,81 @@
+# ÍNDICE de carruseles propuestos — una línea por idea
+
+Regla: antes de proponer nada nuevo, leer este archivo completo. Si una idea nueva
+resuelve la misma duda o cubre el mismo supuesto que una línea de aquí, es
+repetición y no cuenta, aunque el título cambie.
+
+## Ideas previas (briefs de video, marketing/briefs/ — cuentan igual: mismo supuesto = repetido)
+
+- 2026-09-03 · DF · El banco reporta tus depósitos en efectivo al SAT
+- 2026-09-03 · DF · Lo que NO te pueden embargar de la cuenta
+- 2026-09-03 · DF · Leer un requerimiento real: esto todavía no es multa
+- 2026-09-03 · DF · Lo que tu contador no puede hacer por ti (declarar vs litigar)
+- 2026-09-03 · DF · El despacho foráneo no va a venir (ángulo local)
+- 2026-09-03 · DF · 69-B: presunto vs definitivo, la ventana que se cierra sola
+- 2026-09-03 · DF · "Está en el buzón y no lo abrí, ¿cuenta?"
+- 2026-09-03 · DF · Le tienes más miedo a la palabra SAT que al problema
+- 2026-09-03 · DF · Cómo funciona el diagnóstico gratis ("¿qué me vas a cobrar?")
+- 2026-09-03 · DF · Fiestas patrias: el plazo no se toma el puente
+- 2026-09-04 · DF · Visita exprés (49 Bis): te apagan la factura el mismo día
+- 2026-09-04 · DF · Desmentido: el SAT NO va casa por casa con cámaras (nota viral falsa)
+- 2026-09-04 · DF · Qué NO hacer si el SAT toca tu puerta
+- 2026-09-04 · DF · Regularización 2026: descuento en multas que cierra en octubre
+- 2026-09-04 · DF · Defender o regularizar: cómo se decide
+- 2026-09-04 · DF · Le compraste a un proveedor falso y el problema es tuyo
+- 2026-09-04 · DF · "Restringido" no es lo mismo que "cancelado" (sello)
+- 2026-09-04 · DF · En Tlaxcala te pueden multar dos autoridades distintas
+- 2026-09-04 · DF · "Si me acojo al descuento, ¿ya acepté que debo?"
+- 2026-09-04 · DF · No te tumba la multa, te tumba el flujo (no facturar)
+- 2026-09-05 · DF · SAT cancelará 6 veces menos sellos (18k→3k): si te tocó, no fue al azar
+- 2026-09-05 · DF · No te embargaron de la nada: la escalera de notificaciones
+- 2026-09-05 · DF · El 17 no es el problema, el 18 sí (requerimiento→multa→crédito)
+- 2026-09-05 · DF · La última hoja del oficio: firma, cargo, competencia
+- 2026-09-05 · DF · "No localizado": te cambiaste de local y no actualizaste domicilio
+- 2026-09-05 · DF · Qué NO hacer la primera semana sin sello
+- 2026-09-05 · DF · "¿Y si mejor no contesto y me hago el loco?"
+- 2026-09-05 · DF · Tres papeles en un día: requerimiento, multa, aviso de sello
+- 2026-09-05 · DF · Callout: 4 situaciones que se relacionan con sello/cuentas
+- 2026-09-05 · DF · Presentar mal un recurso es peor que no presentarlo (pruebas)
+- 2026-09-06 · DF · 248 pesos por cada peso: por qué la fiscalización no va a parar
+- 2026-09-06 · DF · Buzón mal habilitado = notificación por estrados que nunca ves
+- 2026-09-06 · DF · 12,000 auditorías: si te tocó, te seleccionaron
+- 2026-09-06 · DF · Causal nueva de sello: crédito firme desproporcionado vs facturación
+- 2026-09-06 · DF · La ley del juicio de nulidad cambió en junio (reforma LFPCA)
+- 2026-09-06 · DF · El 17 también entrega el banco (acumulado mensual 15 mil)
+- 2026-09-06 · DF · Caso hipotético: cómo se arma una discrepancia paso a paso
+- 2026-09-06 · DF · ISN Tlaxcala 3%: el impuesto estatal de nómina que no es del SAT
+- 2026-09-06 · DF · "Tengo contacto adentro del SAT": qué no hacer al contratar
+- 2026-09-06 · DF · El acuse de notificación: el papel que decide desde cuándo corre el plazo
+
+## Carruseles
+
+- 2026-09-07 · DF · Paquete Económico 2027 se entrega mañana: qué te cambia
+- 2026-09-07 · DF · Carta invitación vs requerimiento: cuál traes y qué se contesta
+- 2026-09-07 · DF · Cuenta congelada: las primeras horas (oficio, no banco; no mover dinero)
+- 2026-09-07 · DF · ¿Pueden cobrarme algo de hace años? Prescripción y sus interrupciones
+- 2026-09-07 · DF · Pelear sin pagar: la garantía del interés fiscal
+- 2026-09-07 · DF · Impugnar no detiene el cobro por sí solo (suspensión aparte)
+- 2026-09-07 · DF · Cerré el negocio y me sigue llegando: suspensión vs cancelación de RFC
+- 2026-09-07 · DF · Firmaste como representante legal de favor: responsabilidad solidaria
+- 2026-09-07 · DF · Opinión de cumplimiento negativa: pierdes contratos y pagos
+- 2026-09-07 · DF · Te negaron la devolución del saldo a favor: también se impugna
+- 2026-09-07 · DF · Compulsa: el SAT le preguntó a tu proveedor por ti
+- 2026-09-07 · DF · Firmar el acta de visita no es aceptar el contenido
+- 2026-09-07 · DF · Negativa ficta: el silencio del SAT también se pelea
+- 2026-09-07 · DF · Se te cayó el convenio de parcialidades: te exigen todo de golpe
+- 2026-09-07 · DF · Requerimiento estatal por carro usado (Finanzas Tlaxcala, no SAT)
+- 2026-09-07 · CT · RESICO: 3 pagos omitidos o sin anual = expulsión automática
+- 2026-09-07 · CT · La DIOT vence el 17… o no (regla que da margen en el mes)
+- 2026-09-07 · CT · Prórroga por sexto dígito del RFC: días extra que no conocías
+- 2026-09-07 · CT · Ingreso no es utilidad: vendiste 100 mil, no ganaste 100 mil
+- 2026-09-07 · CT · Tope real de deducciones personales (el menor de dos cálculos)
+- 2026-09-07 · CT · Gastos personales que solo cuentan en la anual (dos bolsas)
+- 2026-09-07 · CT · Lo que sí y no se deduce de un carro del negocio
+- 2026-09-07 · CT · Cancelar CFDI ya no es libre: plazo, motivo, aceptación del receptor
+- 2026-09-07 · CT · CFDI de nómina mal timbrado = deducción rechazada
+- 2026-09-07 · CT · Todos tus trabajadores con el mismo salario levanta bandera (IMSS)
+- 2026-09-07 · CT · Contabilidad en cuaderno: por dónde empezar a formalizarla
+- 2026-09-07 · CT · ¿Persona física o moral? Las 4 preguntas antes de abrir
+- 2026-09-07 · CT · Facturaste y no has cobrado: el impuesto se adelanta al cobro
+- 2026-09-07 · CT · 5 preguntas anuales para saber si tu contador te dice todo
+- 2026-09-07 · CT · "Sin factura sale más barato": la cuenta completa
