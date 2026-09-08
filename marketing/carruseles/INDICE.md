@@ -92,3 +92,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-07 · CT · Tienes la factura pero pagaste en efectivo y no se deduce
 - 2026-09-07 · CT · La contraseña ya no alcanza para la devolución automática (e.firma)
 - 2026-09-07 · CT · Paquete 2027: el IEPS que se propone si vendes botanas o alcohol
+
+### Archivos HTML por carrusel — carpeta 2026-09-08/
+
+- 2026-09-08 · DF · El paquete 2027 no trae impuestos nuevos, trae más revisión
+- 2026-09-08 · DF · Tienes la factura, pero nada prueba que el servicio existió (materialidad)
+- 2026-09-08 · DF · La complementaria ya no te salva sola una vez que te están revisando
+- 2026-09-08 · DF · Ya lo pagaste y el sistema dice que sigues debiendo (pago mal aplicado)
+- 2026-09-08 · DF · Se fue tu contador y se llevó los papeles: el requerimiento es tuyo
+- 2026-09-08 · CT · Vendiste menos que el año pasado y tu pago provisional no baja (coeficiente)
+- 2026-09-08 · CT · Sacaste dinero de la empresa y eso tiene nombre fiscal (retiros del socio)
+- 2026-09-08 · CT · Tasa cero y exento no son lo mismo, y te cambia el margen
+- 2026-09-08 · CT · Compraste la máquina de contado y no la deduces toda este año (inversiones)
+- 2026-09-08 · CT · Con la misma tarjeta pagas la renta del local y el súper (cuentas revueltas)
