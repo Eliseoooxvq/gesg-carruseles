@@ -105,3 +105,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-08 · CT · Tasa cero y exento no son lo mismo, y te cambia el margen
 - 2026-09-08 · CT · Compraste la máquina de contado y no la deduces toda este año (inversiones)
 - 2026-09-08 · CT · Con la misma tarjeta pagas la renta del local y el súper (cuentas revueltas)
+
+### Archivos HTML por carrusel — carpeta 2026-09-09/
+
+- 2026-09-09 · DF · Te preguntan por otro (requerimiento de información sobre un tercero), pero la multa es tuya
+- 2026-09-09 · DF · La cuenta es de dos y la congelaron completa (cuenta mancomunada inmovilizada)
+- 2026-09-09 · DF · Te retuvieron el impuesto y quien te retuvo no lo enteró
+- 2026-09-09 · DF · No debías nada y te multaron por no declarar (declaración en ceros, SAT y Finanzas)
+- 2026-09-09 · DF · Te devolvieron el sello y a los días lo perdiste otra vez (la causa seguía viva)
+- 2026-09-09 · CT · Servicios especializados: la informativa cuatrimestral del segundo cuatrimestre
+- 2026-09-09 · CT · Te dieron anticipo y acabaste facturando de más (CFDI de anticipo)
+- 2026-09-09 · CT · Vendes por plataforma: te retienen y aun así te toca declarar
+- 2026-09-09 · CT · El que no pide factura también se factura (comprobante global de mostrador)
+- 2026-09-09 · CT · Rentas el local a una persona física y tú tienes que retenerle

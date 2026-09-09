@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<title>Te retuvieron el impuesto y quien te retuvo no lo enteró</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Big+Shoulders+Display:wght@700;800;900&family=Courier+Prime:wght@400;700&display=swap">
+<style>
+:root{--negro:#0D0D0F;--papel:#EDE9E1;--papel2:#DCD6C9;--rojo:#C0281F;--gris:#7C7A74;--gris2:#A8A49B}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#3A3A3E;font-family:'Archivo',sans-serif;display:flex;flex-direction:column;align-items:center;gap:26px;padding:26px}
+.lamina{width:1080px;height:1350px;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:72px 76px 216px}
+.oscura{background:var(--negro);color:var(--papel)}
+.clara{background:var(--papel);color:var(--negro)}
+.lamina::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;background-image:radial-gradient(rgba(255,255,255,.055) 1px,transparent 1px);background-size:4px 4px}
+.clara::after{background-image:radial-gradient(rgba(13,13,15,.075) 1px,transparent 1px)}
+.oficio{font-family:'Courier Prime',monospace;font-size:21px;letter-spacing:.06em;display:flex;gap:22px;align-items:center;flex-wrap:wrap;padding-bottom:20px;border-bottom:2px solid currentColor;position:relative;z-index:3}
+.oscura .oficio{color:var(--gris2);border-color:#2C2C31}
+.clara .oficio{color:var(--gris);border-color:var(--papel2)}
+.tachon{display:inline-block;background:currentColor;width:112px;height:19px;vertical-align:-2px;opacity:.85}
+.oficio .via{margin-left:auto;letter-spacing:.16em}
+.sello{position:absolute;z-index:4;border:5px solid var(--rojo);color:var(--rojo);font-family:'Courier Prime',monospace;font-weight:700;font-size:30px;letter-spacing:.2em;padding:16px 26px;transform:rotate(-11deg);opacity:.92;text-transform:uppercase;line-height:1;top:250px;right:60px}
+.sello small{display:block;font-size:17px;letter-spacing:.12em;margin-top:9px;opacity:.9}
+.hueco{margin-top:auto}
+h1{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:152px;line-height:.84;letter-spacing:-.012em;text-transform:uppercase;position:relative;z-index:3}
+h1 em{font-style:normal;color:var(--rojo)}
+.subhook{font-family:'Courier Prime',monospace;font-size:29px;line-height:1.5;margin-top:30px;color:var(--gris2);position:relative;z-index:3;max-width:26ch}
+.clara .subhook{color:var(--gris)}
+.paso{font-family:'Courier Prime',monospace;font-size:22px;letter-spacing:.2em;text-transform:uppercase;color:var(--rojo);margin-bottom:26px;position:relative;z-index:3}
+h2{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:104px;line-height:.87;letter-spacing:-.008em;text-transform:uppercase;margin-bottom:36px;position:relative;z-index:3}
+.oscura h2{color:var(--papel)}
+p{font-size:39px;line-height:1.45;font-weight:500;max-width:23ch;position:relative;z-index:3}
+.oscura p{color:#B9B5AC}
+.clara p{color:#3A3833}
+p b{font-weight:700}
+.oscura p b{color:var(--papel)}
+.clara p b{color:var(--negro)}
+.perfil{position:absolute;left:0;right:0;bottom:126px;z-index:2;border-top:3px dashed currentColor;opacity:.22}
+.pie{position:absolute;left:76px;right:76px;bottom:56px;z-index:3;display:flex;justify-content:space-between;align-items:baseline;font-family:'Courier Prime',monospace;font-size:22px;letter-spacing:.1em;color:var(--gris)}
+.pie b{font-weight:700;letter-spacing:.24em}
+.oscura .pie b{color:var(--papel)}
+.clara .pie b{color:var(--negro)}
+.cierre h2{font-size:118px;margin-bottom:0}
+.cierre h2 em{font-style:normal;color:var(--rojo)}
+.datos{margin-top:46px;padding-top:34px;border-top:3px solid #2C2C31;position:relative;z-index:3}
+.tel{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:76px;color:var(--papel);line-height:1}
+.web{font-family:'Courier Prime',monospace;font-size:30px;color:var(--rojo);margin-top:16px;letter-spacing:.08em}
+.dir{font-family:'Courier Prime',monospace;font-size:22px;color:var(--gris);margin-top:22px;line-height:1.6}
+</style>
+</head>
+<!-- DESCRIPCIÓN: Me retuvieron impuestos y no los pagaron al SAT qué hago. La retención aparece en tu comprobante pero no en el sistema, y la diferencia te la reclaman a ti. Mándanos la foto de tu constancia y del CFDI y lo revisamos. | HASHTAGS: #impuestos #defensafiscal #sat #cfdi #puebla | PARA QUIEN: Defensa fiscal. Profesionista, arrendador o proveedor al que un cliente le retuvo ISR o IVA y no lo enteró. -->
+<body>
+<section class="lamina oscura" data-document-role="page" data-label="L1 portada">
+<div class="oficio">OFICIO <span class="tachon"></span>/2026 &nbsp;-&nbsp; FOLIO <span class="tachon"></span><span class="via">NOTIFICADO</span></div>
+<div class="sello">Retención<br>sin entero<small>según el sistema</small></div>
+<div class="hueco">
+<h1>Te lo<br>descontaron.<br><em>Nunca llegó al SAT.</em></h1>
+<p class="subhook">El impuesto que te retuvieron y no se pagó.</p>
+</div>
+<div class="perfil"></div>
+<div class="pie"><span><b>GESG</b> &middot; DEFENSA FISCAL</span><span>01 / 06 &rarr;</span></div>
+</section>
+
+<section class="lamina clara" data-document-role="page" data-label="L2">
+<div class="oficio">EXPEDIENTE <span class="tachon"></span> &nbsp;-&nbsp; CHIAUTEMPAN, TLAX.<span class="via">EN TRÁMITE</span></div>
+<div class="hueco">
+<p class="paso">Dónde se nota</p>
+<h2>Tu constancia<br>no cuadra</h2>
+<p>Cobraste menos porque te descontaron ISR o IVA. Pero al revisar tu declaración, ese impuesto retenido no aparece cargado a tu favor.</p>
+</div>
+<div class="perfil"></div>
+<div class="pie"><span><b>GESG</b> &middot; DEFENSA FISCAL</span><span>02 / 06 &rarr;</span></div>
+</section>
+
+<section class="lamina oscura" data-document-role="page" data-label="L3">
+<div class="oficio">EXPEDIENTE <span class="tachon"></span> &nbsp;-&nbsp; CHIAUTEMPAN, TLAX.<span class="via">EN TRÁMITE</span></div>
+<div class="hueco">
+<p class="paso">Por qué pasa</p>
+<h2>Se quedó<br>en el camino</h2>
+<p>Quien retiene tiene que enterar ese dinero y timbrarlo bien. Si no lo hizo, o lo hizo con datos mal puestos, <b>para el sistema no existe</b>.</p>
+</div>
+<div class="perfil"></div>
+<div class="pie"><span><b>GESG</b> &middot; DEFENSA FISCAL</span><span>03 / 06 &rarr;</span></div>
+</section>
+
+<section class="lamina clara" data-document-role="page" data-label="L4">
+<div class="oficio">EXPEDIENTE <span class="tachon"></span> &nbsp;-&nbsp; CHIAUTEMPAN, TLAX.<span class="via">EN TRÁMITE</span></div>
+<div class="hueco">
+<p class="paso">A quién le pega</p>
+<h2>El problema<br>llega a ti</h2>
+<p>Tú eres quien pide la devolución o el acreditamiento. La diferencia te la reclaman a ti primero, aunque ese dinero ya no lo tengas.</p>
+</div>
+<div class="perfil"></div>
+<div class="pie"><span><b>GESG</b> &middot; DEFENSA FISCAL</span><span>04 / 06 &rarr;</span></div>
+</section>
+
+<section class="lamina oscura" data-document-role="page" data-label="L5">
+<div class="oficio">EXPEDIENTE <span class="tachon"></span> &nbsp;-&nbsp; CHIAUTEMPAN, TLAX.<span class="via">EN TRÁMITE</span></div>
+<div class="hueco">
+<p class="paso">Lo que se hace</p>
+<h2>Se prueba<br>la retención</h2>
+<p>Con el CFDI, el contrato y el comprobante de lo que sí te depositaron se acredita cuánto te descontaron. <b>Guarda el estado de cuenta del pago.</b></p>
+</div>
+<div class="perfil"></div>
+<div class="pie"><span><b>GESG</b> &middot; DEFENSA FISCAL</span><span>05 / 06 &rarr;</span></div>
+</section>
+
+<section class="lamina oscura cierre" data-document-role="page" data-label="L6 cierre">
+<div class="oficio">GESG DESPACHO CONTABLE<span class="via">ÁREA JURÍDICA</span></div>
+<div class="hueco">
+<h2>Mándanos la<br>foto del oficio.<br><em>Te decimos si<br>tiene defensa.</em></h2>
+<div class="datos">
+<div class="tel">246 469 9493</div>
+<div class="web">despachogesg.com</div>
+<div class="dir">Miguel Hernández 403 I, Col. El Alto &middot; Chiautempan, Tlaxcala<br>Despacho contable con área jurídica propia &middot; Atendemos Tlaxcala y Puebla</div>
+</div>
+</div>
+<div class="pie"><span><b>GESG</b> &middot; DEFENSA FISCAL</span><span>06 / 06</span></div>
+</section>
+</body>
+</html>

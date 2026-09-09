@@ -1,0 +1,27 @@
+# Carruseles 2026-09-09 — lista para publicar
+
+| # | Área | Título | Descripción | Hashtags |
+|---|---|---|---|---|
+| 01 | Defensa fiscal | Te preguntan por otro, pero la multa es tuya | El SAT me pide información de un cliente al que están revisando. El requerimiento no va contra ti, pero contestarlo sí es tu obligación y no hacerlo trae multa propia. Mándanos la foto del oficio y te decimos qué se contesta. | #impuestos #defensafiscal #sat #chiautempan |
+| 02 | Defensa fiscal | La cuenta es de dos y la congelaron completa | Me congelaron la cuenta que comparto con mi esposa por una deuda mía. La orden llega por RFC y el banco detiene el saldo completo, aunque adentro haya dinero de otra persona. Mándanos la foto del oficio y te decimos si tiene defensa. | #impuestos #defensafiscal #creditofiscal #sat #tlaxcala |
+| 03 | Defensa fiscal | Te retuvieron el impuesto y quien te retuvo no lo enteró | Me retuvieron impuestos y no los pagaron al SAT qué hago. La retención aparece en tu comprobante pero no en el sistema, y la diferencia te la reclaman a ti. Mándanos la foto de tu constancia y del CFDI y lo revisamos. | #impuestos #defensafiscal #sat #cfdi #puebla |
+| 04 | Defensa fiscal | No debías nada y te multaron por no declarar | Me multaron por no declarar aunque no tuve ventas. Mientras la obligación siga activa en tu RFC la declaración se presenta, aunque vaya en ceros, y lo mismo aplica con Finanzas del Estado. Mándanos la foto del requerimiento y lo revisamos. | #impuestos #defensafiscal #sat #sellodigital #tlaxcala |
+| 05 | Defensa fiscal | Te devolvieron el sello y a los días lo perdiste otra vez | Me volvieron a restringir el sello digital después de aclarar. La aclaración cierra el oficio, no la causa: si lo que la originó sigue vivo, la restricción regresa. Mándanos la foto del oficio y te decimos si tiene defensa. | #impuestos #sellodigital #defensafiscal #sat #chiautempan |
+| 06 | Contabilidad | Si prestas servicios especializados, este cuatrimestre se informa ahora | Cuándo se presenta la informativa cuatrimestral de servicios especializados. El periodo de mayo a agosto se reporta al IMSS y al Infonavit dentro de septiembre, y de eso depende que tu cliente pueda deducir lo que te pagó. Si no sabes si te toca, escríbenos. | #negocios #contabilidad #deducciones #apizaco |
+| 07 | Contabilidad | Te dieron anticipo y acabaste facturando de más | Cómo se factura un anticipo sin duplicar el ingreso. Si facturas el anticipo y después la venta completa sin descontarlo, terminas pagando impuesto por dinero que no ganaste. Si cobras anticipos o apartados, escríbenos y lo revisamos. | #negocios #contabilidad #cfdi #facturacion #puebla |
+| 08 | Contabilidad | Vendes por plataforma: ya te retienen y aun así declaras | Vendo por internet y la plataforma me retiene, tengo que declarar. La retención es un adelanto, no tu impuesto final, y el depósito neto tampoco es tu ingreso real. Si vendes en línea, escríbenos y revisamos cómo vas. | #negocios #contabilidad #sat #facturacion #tlaxcala |
+| 09 | Contabilidad | El que no pide factura también se factura | Cómo facturo lo que vendo cuando el cliente no me pide factura. Las ventas de mostrador se agrupan en un comprobante global con su detalle atrás, y eso es lo que hace que tus depósitos cuadren. Si vendes al público, escríbenos y lo revisamos. | #negocios #facturacion #cfdi #contabilidad #chiautempan |
+| 10 | Contabilidad | Rentas el local a un particular y tú tienes que retenerle | Tengo que retenerle impuestos al dueño del local que rento. Cuando el arrendador es persona física y tú rentas para tu negocio, una parte del ISR y del IVA la retienes y la enteras tú, y de eso depende que la renta se deduzca. Escríbenos y lo revisamos. | #negocios #contabilidad #deducciones #cfdi #apizaco |
+
+## Archivos
+
+01. `01-te-preguntan-por-otro-y-la-multa-es-tuya.html` — Defensa fiscal. Negocio que recibe un requerimiento por operaciones con un cliente o proveedor que está siendo revisado.
+02. `02-la-cuenta-es-de-dos-y-la-congelaron.html` — Defensa fiscal. Persona con cuenta mancomunada o familiar inmovilizada por un crédito fiscal de uno solo de los titulares.
+03. `03-te-retuvieron-y-no-lo-enteraron.html` — Defensa fiscal. Profesionista, arrendador o proveedor al que un cliente le retuvo ISR o IVA y no lo enteró.
+04. `04-no-debias-nada-y-te-multaron.html` — Defensa fiscal. Negocio o persona física con RFC activo que dejó de declarar los meses sin actividad y ya recibió requerimiento o multa.
+05. `05-te-devolvieron-el-sello-y-lo-perdiste-otra-vez.html` — Defensa fiscal. Contribuyente que ya recuperó el sello una vez y volvió a quedarse sin poder facturar.
+06. `06-servicios-especializados-informativa-cuatrimestral.html` — Contabilidad. Prestador de servicios especializados con registro que factura a empresas y tiene informativas cuatrimestrales.
+07. `07-el-anticipo-mal-facturado.html` — Contabilidad. Negocio que cobra anticipos o apartados y factura al momento en que entra el depósito.
+08. `08-vendes-por-plataforma-y-te-retienen.html` — Contabilidad. Quien vende por marketplace, apps de reparto o redes y cree que con la retención de la plataforma ya quedó.
+09. `09-la-factura-global-del-mostrador.html` — Contabilidad. Tienda, taller o negocio de mostrador que vende a público en general y no emite comprobante global.
+10. `10-rentas-el-local-y-tienes-que-retener.html` — Contabilidad. Negocio o persona con actividad empresarial que renta local o bodega a una persona física.
