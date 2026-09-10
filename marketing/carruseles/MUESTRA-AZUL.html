@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<title>Carrusel GESG - expediente en azul</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* =========================================================
+   CARRUSEL GESG - sistema "expediente", version azul
+   Se conserva la idea: la lamina se ve como el papel del que
+   habla. Cambia la ejecucion: azul del logo en vez de rojo,
+   serif editorial en vez de tipografia de cartel, y sans con
+   espaciado ancho en vez de maquina de escribir.
+   1080 x 1350
+   ========================================================= */
+:root{
+  --tinta:#0B1B2E;        /* azul casi negro; mas elegante que el negro puro */
+  --tinta-2:#132A44;
+  --papel:#F2F4F7;        /* papel frio, para que case con el azul */
+  --papel-2:#DCE3EB;
+  --azul:#4878BA;         /* EL azul del logo, muestreado del archivo */
+  --azul-alto:#8FB2DC;    /* para texto chico sobre fondo oscuro */
+  --azul-hondo:#2E5C99;   /* para texto chico sobre fondo claro */
+  --gris:#6C7A8A;
+  --gris-alto:#93A3B5;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#1A222C;font-family:'Inter',sans-serif;
+     display:flex;flex-direction:column;align-items:center;gap:26px;padding:26px}
+
+.lamina{width:1080px;height:1350px;position:relative;overflow:hidden;
+        display:flex;flex-direction:column;padding:80px 84px 210px}
+
+.oscura{background:var(--tinta);color:var(--papel)}
+.clara{background:var(--papel);color:var(--tinta)}
+
+/* Grano de papel, mas discreto que antes: se nota, no se ve. */
+.lamina::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.34;
+  background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);
+  background-size:5px 5px;
+}
+.clara::after{background-image:radial-gradient(rgba(11,27,46,.06) 1px,transparent 1px)}
+
+/* ---- encabezado de oficio ---- */
+.oficio{
+  font-size:19px;font-weight:600;letter-spacing:.17em;text-transform:uppercase;
+  display:flex;gap:20px;align-items:center;
+  padding-bottom:22px;border-bottom:1px solid currentColor;
+  position:relative;z-index:3;
+}
+.oscura .oficio{color:var(--gris-alto);border-color:rgba(147,163,181,.28)}
+.clara .oficio{color:var(--gris);border-color:var(--papel-2)}
+.tachon{display:inline-block;background:currentColor;width:98px;height:13px;
+        vertical-align:-1px;opacity:.42;border-radius:1px}
+.oficio .via{margin-left:auto;letter-spacing:.24em}
+.oscura .oficio .via{color:var(--azul-alto)}
+.clara .oficio .via{color:var(--azul-hondo)}
+
+/* ---- sello ----
+   Borde fino y letra espaciada: sigue siendo un sello,
+   ya no un timbre de goma gritado. */
+.sello{
+  position:absolute;z-index:4;border:2px solid var(--azul);color:var(--azul);
+  font-size:21px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;
+  padding:16px 26px;transform:rotate(-8deg);line-height:1.34;border-radius:3px;
+}
+.clara .sello{border-color:var(--azul-hondo);color:var(--azul-hondo)}
+.sello small{display:block;font-size:14px;letter-spacing:.14em;margin-top:9px;
+             opacity:.82;text-transform:none;font-weight:500}
+.sello.arriba{top:246px;right:70px}
+.sello.abajo{bottom:190px;right:74px;transform:rotate(6deg)}
+
+/* ---- portada ---- */
+.hueco{margin-top:auto}
+h1{
+  font-family:'Fraunces',serif;font-weight:600;
+  font-variation-settings:'opsz' 144;
+  font-size:118px;line-height:1.0;letter-spacing:-.021em;
+  position:relative;z-index:3;
+}
+/* La palabra que carga el golpe va en cursiva y en el azul del
+   logo. Es el unico adorno del sistema, por eso funciona. */
+h1 em{font-style:italic;font-weight:500;color:var(--azul-alto)}
+.clara h1 em{color:var(--azul-hondo)}
+.subhook{
+  font-size:31px;line-height:1.5;font-weight:400;
+  margin-top:34px;color:var(--gris-alto);position:relative;z-index:3;max-width:27ch;
+}
+.clara .subhook{color:var(--gris)}
+
+/* ---- interiores ---- */
+.paso{
+  font-size:20px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;
+  margin-bottom:30px;position:relative;z-index:3;max-width:none;
+}
+.paso::before{content:"";display:block;width:46px;height:2px;
+              background:currentColor;opacity:.75;margin-bottom:20px}
+.oscura .paso{color:var(--azul-alto)}
+.clara .paso{color:var(--azul-hondo)}
+h2{
+  font-family:'Fraunces',serif;font-weight:600;
+  font-variation-settings:'opsz' 144;
+  font-size:86px;line-height:1.06;letter-spacing:-.018em;
+  margin-bottom:38px;position:relative;z-index:3;
+}
+p{font-size:36px;line-height:1.5;font-weight:400;max-width:24ch;position:relative;z-index:3}
+.oscura p{color:#B7C3D1}
+.clara p{color:#3D4B5C}
+p b{font-weight:600}
+.oscura p b{color:var(--papel)}
+.clara p b{color:var(--tinta)}
+p .sub{background:linear-gradient(transparent 64%,rgba(72,120,186,.34) 64%);font-weight:600}
+
+/* ---- perforado ---- */
+.perfil{position:absolute;left:0;right:0;bottom:130px;z-index:2;
+        border-top:1px dashed currentColor;opacity:.2}
+
+/* ---- pie ---- */
+.pie{
+  position:absolute;left:84px;right:84px;bottom:58px;z-index:3;
+  display:flex;justify-content:space-between;align-items:baseline;
+  font-size:19px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+}
+.oscura .pie{color:var(--gris-alto)}
+.clara .pie{color:var(--gris)}
+.pie b{font-weight:600;letter-spacing:.28em}
+.oscura .pie b{color:var(--papel)}
+.clara .pie b{color:var(--tinta)}
+.pie .folio{font-family:'Fraunces',serif;font-weight:500;font-size:23px;letter-spacing:.08em}
+.oscura .pie .folio{color:var(--azul-alto)}
+.clara .pie .folio{color:var(--azul-hondo)}
+
+/* ---- cierre ---- */
+.cierre h2{font-size:92px;margin-bottom:0}
+.cierre h2 em{font-style:italic;font-weight:500;color:var(--azul-alto)}
+.datos{margin-top:52px;padding-top:38px;border-top:1px solid rgba(147,163,181,.28);
+       position:relative;z-index:3}
+.datos .tel{font-family:'Fraunces',serif;font-weight:600;font-size:74px;
+            letter-spacing:.01em;color:var(--papel);line-height:1}
+.datos .web{font-size:28px;font-weight:500;letter-spacing:.1em;color:var(--azul-alto);margin-top:18px}
+.datos .dir{font-size:21px;font-weight:400;color:var(--gris-alto);margin-top:24px;line-height:1.65}
+</style>
+</head>
+<body>
+
+<section class="lamina oscura" data-document-role="page" data-label="L1 portada">
+  <div class="oficio">Oficio <span class="tachon"></span>/2026 &nbsp;&middot;&nbsp; Folio <span class="tachon"></span><span class="via">Notificado</span></div>
+  <div class="sello arriba">Plazo<br>corriendo<small>desde la notificación</small></div>
+  <div class="hueco">
+    <h1>Tres años<br>declarando<br><em>pérdida.</em></h1>
+    <p class="subhook">Eso ya es una bandera para el SAT.</p>
+  </div>
+  <div class="perfil"></div>
+  <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">01 / 06</span></div>
+</section>
+
+<section class="lamina clara" data-document-role="page" data-label="L2">
+  <div class="oficio">Expediente <span class="tachon"></span> &nbsp;&middot;&nbsp; Chiautempan, Tlax.<span class="via">En trámite</span></div>
+  <div class="hueco">
+    <p class="paso">Lo que se anunció</p>
+    <h2>129 mil<br>empresas</h2>
+    <p>El SAT dijo esta semana que 129 mil empresas declararon pérdida tres años seguidos y que 54 mil llevan cinco sin pagar ISR. <b>Ya están en una lista.</b></p>
+  </div>
+  <div class="perfil"></div>
+  <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">02 / 06</span></div>
+</section>
+
+<section class="lamina oscura" data-document-role="page" data-label="L3">
+  <div class="oficio">Expediente <span class="tachon"></span> &nbsp;&middot;&nbsp; Chiautempan, Tlax.<span class="via">En trámite</span></div>
+  <div class="hueco">
+    <p class="paso">Por qué te alcanza</p>
+    <h2>No es solo<br>para grandes</h2>
+    <p>El cruce es automático. Si tus ingresos suben y el resultado sale en pérdida año con año, el sistema lo marca aunque seas un negocio chico.</p>
+  </div>
+  <div class="perfil"></div>
+  <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">03 / 06</span></div>
+</section>
+
+<section class="lamina clara" data-document-role="page" data-label="L4">
+  <div class="oficio">Expediente <span class="tachon"></span> &nbsp;&middot;&nbsp; Chiautempan, Tlax.<span class="via">Urgente</span></div>
+  <div class="sello abajo">Corre<br>el plazo</div>
+  <div class="hueco">
+    <p class="paso">Lo que sigue</p>
+    <h2>Primero<br>te preguntan</h2>
+    <p>Casi nunca empieza con una auditoría. Empieza con una carta. <span class="sub">Ahí se decide si el asunto crece o se cierra</span>.</p>
+  </div>
+  <div class="perfil"></div>
+  <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">04 / 06</span></div>
+</section>
+
+<section class="lamina oscura" data-document-role="page" data-label="L5">
+  <div class="oficio">Expediente <span class="tachon"></span> &nbsp;&middot;&nbsp; Chiautempan, Tlax.<span class="via">Advertencia</span></div>
+  <div class="hueco">
+    <p class="paso">Qué revisar hoy</p>
+    <h2>Que la pérdida<br>se sostenga</h2>
+    <p>Una pérdida real se prueba con papeles: contratos, pagos, inventarios, nómina. Si no se sostiene con eso, no es una pérdida: es un pendiente.</p>
+  </div>
+  <div class="perfil"></div>
+  <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">05 / 06</span></div>
+</section>
+
+<section class="lamina oscura cierre" data-document-role="page" data-label="L6 cierre">
+  <div class="oficio">GESG Despacho Contable<span class="via">Área jurídica</span></div>
+  <div class="hueco">
+    <h2>Mándanos la<br>foto del oficio.<br><em>Te decimos si<br>tiene defensa.</em></h2>
+    <div class="datos">
+      <div class="tel">246 469 9493</div>
+      <div class="web">despachogesg.com</div>
+      <div class="dir">Miguel Hernández 403 I, Col. El Alto &middot; Chiautempan, Tlaxcala<br>Despacho contable con área jurídica propia &middot; Atendemos Tlaxcala y Puebla</div>
+    </div>
+  </div>
+  <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">06 / 06</span></div>
+</section>
+
+</body>
+</html>

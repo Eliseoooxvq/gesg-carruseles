@@ -5,48 +5,61 @@
 <title>Vendiste la camioneta del negocio y eso es ingreso</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Big+Shoulders+Display:wght@700;800;900&family=Courier+Prime:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600&display=swap">
 <style>
-:root{--negro:#0D0D0F;--papel:#EDE9E1;--papel2:#DCD6C9;--rojo:#C0281F;--gris:#7C7A74;--gris2:#A8A49B}
+:root{--tinta:#0B1B2E;--tinta2:#132A44;--papel:#F2F4F7;--papel2:#DCE3EB;--azul:#4878BA;--azul-alto:#8FB2DC;--azul-hondo:#2E5C99;--gris:#6C7A8A;--gris2:#93A3B5}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#3A3A3E;font-family:'Archivo',sans-serif;display:flex;flex-direction:column;align-items:center;gap:26px;padding:26px}
-.lamina{width:1080px;height:1350px;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:72px 76px 216px}
-.oscura{background:var(--negro);color:var(--papel)}
-.clara{background:var(--papel);color:var(--negro)}
-.lamina::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;background-image:radial-gradient(rgba(255,255,255,.055) 1px,transparent 1px);background-size:4px 4px}
-.clara::after{background-image:radial-gradient(rgba(13,13,15,.075) 1px,transparent 1px)}
-.oficio{font-family:'Courier Prime',monospace;font-size:21px;letter-spacing:.06em;display:flex;gap:22px;align-items:center;flex-wrap:wrap;padding-bottom:20px;border-bottom:2px solid currentColor;position:relative;z-index:3}
-.oscura .oficio{color:var(--gris2);border-color:#2C2C31}
+body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-direction:column;align-items:center;gap:26px;padding:26px}
+.lamina{width:1080px;height:1350px;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:80px 84px 210px}
+.oscura{background:var(--tinta);color:var(--papel)}
+.clara{background:var(--papel);color:var(--tinta)}
+.lamina::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.34;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:5px 5px}
+.clara::after{background-image:radial-gradient(rgba(11,27,46,.06) 1px,transparent 1px)}
+.oficio{font-size:19px;font-weight:600;letter-spacing:.17em;text-transform:uppercase;display:flex;gap:20px;align-items:center;padding-bottom:22px;border-bottom:1px solid currentColor;position:relative;z-index:3}
+.oscura .oficio{color:var(--gris2);border-color:rgba(147,163,181,.28)}
 .clara .oficio{color:var(--gris);border-color:var(--papel2)}
-.tachon{display:inline-block;background:currentColor;width:112px;height:19px;vertical-align:-2px;opacity:.85}
-.oficio .via{margin-left:auto;letter-spacing:.16em}
-.sello{position:absolute;z-index:4;border:5px solid var(--rojo);color:var(--rojo);font-family:'Courier Prime',monospace;font-weight:700;font-size:30px;letter-spacing:.2em;padding:16px 26px;transform:rotate(-11deg);opacity:.92;text-transform:uppercase;line-height:1;top:250px;right:60px}
-.sello small{display:block;font-size:17px;letter-spacing:.12em;margin-top:9px;opacity:.9}
+.tachon{display:inline-block;background:currentColor;width:98px;height:13px;vertical-align:-1px;opacity:.42;border-radius:1px}
+.oficio .via{margin-left:auto;letter-spacing:.24em}
+.oscura .oficio .via{color:var(--azul-alto)}
+.clara .oficio .via{color:var(--azul-hondo)}
+.sello{position:absolute;z-index:4;border:2px solid var(--azul);color:var(--azul);font-size:21px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;padding:16px 26px;transform:rotate(-8deg);line-height:1.34;border-radius:3px;top:246px;right:70px}
+.clara .sello{border-color:var(--azul-hondo);color:var(--azul-hondo)}
+.sello small{display:block;font-size:14px;letter-spacing:.14em;margin-top:9px;opacity:.82;text-transform:none;font-weight:500}
+.sello.abajo{top:auto;bottom:190px;right:74px;transform:rotate(6deg)}
 .hueco{margin-top:auto}
-h1{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:152px;line-height:.84;letter-spacing:-.012em;text-transform:uppercase;position:relative;z-index:3}
-h1 em{font-style:normal;color:var(--rojo)}
-.subhook{font-family:'Courier Prime',monospace;font-size:29px;line-height:1.5;margin-top:30px;color:var(--gris2);position:relative;z-index:3;max-width:26ch}
+h1{font-family:'Fraunces',serif;font-weight:600;font-variation-settings:'opsz' 144;font-size:118px;line-height:1;letter-spacing:-.021em;position:relative;z-index:3}
+h1 em{font-style:italic;font-weight:500;color:var(--azul-alto)}
+.clara h1 em{color:var(--azul-hondo)}
+.subhook{font-size:31px;line-height:1.5;font-weight:400;margin-top:34px;color:var(--gris2);position:relative;z-index:3;max-width:27ch}
 .clara .subhook{color:var(--gris)}
-.paso{font-family:'Courier Prime',monospace;font-size:22px;letter-spacing:.2em;text-transform:uppercase;color:var(--rojo);margin-bottom:26px;position:relative;z-index:3}
-h2{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:104px;line-height:.87;letter-spacing:-.008em;text-transform:uppercase;margin-bottom:36px;position:relative;z-index:3}
-.oscura h2{color:var(--papel)}
-p{font-size:39px;line-height:1.45;font-weight:500;max-width:23ch;position:relative;z-index:3}
-.oscura p{color:#B9B5AC}
-.clara p{color:#3A3833}
-p b{font-weight:700}
+.paso{font-size:20px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;margin-bottom:30px;position:relative;z-index:3;max-width:none}
+.paso::before{content:"";display:block;width:46px;height:2px;background:currentColor;opacity:.75;margin-bottom:20px}
+.oscura .paso{color:var(--azul-alto)}
+.clara .paso{color:var(--azul-hondo)}
+h2{font-family:'Fraunces',serif;font-weight:600;font-variation-settings:'opsz' 144;font-size:86px;line-height:1.06;letter-spacing:-.018em;margin-bottom:38px;position:relative;z-index:3}
+p{font-size:36px;line-height:1.5;font-weight:400;max-width:24ch;position:relative;z-index:3}
+.oscura p{color:#B7C3D1}
+.clara p{color:#3D4B5C}
+p b{font-weight:600}
 .oscura p b{color:var(--papel)}
-.clara p b{color:var(--negro)}
-.perfil{position:absolute;left:0;right:0;bottom:126px;z-index:2;border-top:3px dashed currentColor;opacity:.22}
-.pie{position:absolute;left:76px;right:76px;bottom:56px;z-index:3;display:flex;justify-content:space-between;align-items:baseline;font-family:'Courier Prime',monospace;font-size:22px;letter-spacing:.1em;color:var(--gris)}
-.pie b{font-weight:700;letter-spacing:.24em}
+.clara p b{color:var(--tinta)}
+p .sub{background:linear-gradient(transparent 64%,rgba(72,120,186,.34) 64%);font-weight:600}
+.perfil{position:absolute;left:0;right:0;bottom:130px;z-index:2;border-top:1px dashed currentColor;opacity:.2}
+.pie{position:absolute;left:84px;right:84px;bottom:58px;z-index:3;display:flex;justify-content:space-between;align-items:baseline;font-size:19px;font-weight:500;letter-spacing:.16em;text-transform:uppercase}
+.oscura .pie{color:var(--gris2)}
+.clara .pie{color:var(--gris)}
+.pie b{font-weight:600;letter-spacing:.28em}
 .oscura .pie b{color:var(--papel)}
-.clara .pie b{color:var(--negro)}
-.cierre h2{font-size:118px;margin-bottom:0}
-.cierre h2 em{font-style:normal;color:var(--rojo)}
-.datos{margin-top:46px;padding-top:34px;border-top:3px solid #2C2C31;position:relative;z-index:3}
-.tel{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:76px;color:var(--papel);line-height:1}
-.web{font-family:'Courier Prime',monospace;font-size:30px;color:var(--rojo);margin-top:16px;letter-spacing:.08em}
-.dir{font-family:'Courier Prime',monospace;font-size:22px;color:var(--gris);margin-top:22px;line-height:1.6}
+.clara .pie b{color:var(--tinta)}
+.pie .folio{font-family:'Fraunces',serif;font-weight:500;font-size:23px;letter-spacing:.08em}
+.oscura .pie .folio{color:var(--azul-alto)}
+.clara .pie .folio{color:var(--azul-hondo)}
+.cierre h2{font-size:92px;margin-bottom:0}
+.cierre h2 em{font-style:italic;font-weight:500;color:var(--azul-alto)}
+.datos{margin-top:52px;padding-top:38px;border-top:1px solid rgba(147,163,181,.28);position:relative;z-index:3}
+.tel{font-family:'Fraunces',serif;font-weight:600;font-size:74px;letter-spacing:.01em;color:var(--papel);line-height:1}
+.web{font-size:28px;font-weight:500;letter-spacing:.1em;color:var(--azul-alto);margin-top:18px}
+.dir{font-size:21px;font-weight:400;color:var(--gris2);margin-top:24px;line-height:1.65}
 </style>
 </head>
 <!-- DESCRIPCIÓN: Vendí un vehículo o una máquina de mi negocio y tengo que declararlo. Sí: la venta de un activo entra como ingreso del periodo y contra ella se resta el valor que le quedaba en libros, siempre que el bien estuviera registrado. Escríbenos antes de cerrar la venta y lo revisamos. | HASHTAGS: #negocios #contabilidad #sat #facturacion #tlaxcala | PARA QUIEN: Contabilidad. Negocio que va a vender o ya vendió vehículo, maquinaria o equipo que usaba en la actividad. -->
@@ -59,7 +72,7 @@ p b{font-weight:700}
 <p class="subhook">Vender un activo también se declara.</p>
 </div>
 <div class="perfil"></div>
-<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span>01 / 06 &rarr;</span></div>
+<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span class="folio">01 / 06</span></div>
 </section>
 
 <section class="lamina clara" data-document-role="page" data-label="L2">
@@ -70,7 +83,7 @@ p b{font-weight:700}
 <p>Como el bien ya estaba pagado y desgastado, la venta se siente como recuperar dinero propio. Para el fisco es una operación más del negocio.</p>
 </div>
 <div class="perfil"></div>
-<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span>02 / 06 &rarr;</span></div>
+<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span class="folio">02 / 06</span></div>
 </section>
 
 <section class="lamina oscura" data-document-role="page" data-label="L3">
@@ -81,7 +94,7 @@ p b{font-weight:700}
 <p>Se factura la venta, con IVA cuando corresponde, y el ingreso entra al periodo. <b>Contra eso se resta lo que le quedaba de valor</b> al bien.</p>
 </div>
 <div class="perfil"></div>
-<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span>03 / 06 &rarr;</span></div>
+<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span class="folio">03 / 06</span></div>
 </section>
 
 <section class="lamina clara" data-document-role="page" data-label="L4">
@@ -92,7 +105,7 @@ p b{font-weight:700}
 <p>Si el bien jamás entró a la contabilidad, no tienes qué restar: se declara la venta completa y no hay costo que la respalde.</p>
 </div>
 <div class="perfil"></div>
-<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span>04 / 06 &rarr;</span></div>
+<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span class="folio">04 / 06</span></div>
 </section>
 
 <section class="lamina oscura" data-document-role="page" data-label="L5">
@@ -103,7 +116,7 @@ p b{font-weight:700}
 <p>Pide cuánto lleva depreciado y cuánto le queda. <b>Ese número cambia lo que vas a pagar</b> y se saca antes de cerrar el trato, no después.</p>
 </div>
 <div class="perfil"></div>
-<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span>05 / 06 &rarr;</span></div>
+<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span class="folio">05 / 06</span></div>
 </section>
 
 <section class="lamina oscura cierre" data-document-role="page" data-label="L6 cierre">
@@ -116,7 +129,7 @@ p b{font-weight:700}
 <div class="dir">Miguel Hernández 403 I, Col. El Alto &middot; Chiautempan, Tlaxcala<br>Despacho contable con área jurídica propia &middot; Atendemos Tlaxcala y Puebla</div>
 </div>
 </div>
-<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span>06 / 06</span></div>
+<div class="pie"><span><b>GESG</b> &middot; CONTABILIDAD</span><span class="folio">06 / 06</span></div>
 </section>
 </body>
 </html>
