@@ -118,3 +118,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-09 · CT · Vendes por plataforma: te retienen y aun así te toca declarar
 - 2026-09-09 · CT · El que no pide factura también se factura (comprobante global de mostrador)
 - 2026-09-09 · CT · Rentas el local a una persona física y tú tienes que retenerle
+
+### Archivos HTML por carrusel — carpeta 2026-09-10/
+
+- 2026-09-10 · DF · Tres años declarando pérdida y ya te tienen identificado
+- 2026-09-10 · DF · Te pueden cerrar el local por no dar el comprobante
+- 2026-09-10 · DF · Antes de que te cobren hay una ventana para meter pruebas
+- 2026-09-10 · DF · Ya te revisaron ese año y te vuelven a tocar
+- 2026-09-10 · DF · Ganaste y el SAT te lo vuelve a notificar
+- 2026-09-10 · CT · La factura de agosto te llegó hasta septiembre
+- 2026-09-10 · CT · Pagas el crédito del negocio y no se deduce completo
+- 2026-09-10 · CT · Compraste el equipo antes de darte de alta
+- 2026-09-10 · CT · Vendiste la camioneta del negocio y eso es ingreso
+- 2026-09-10 · CT · Traes saldo a favor de IVA y ahí lleva años
