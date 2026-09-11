@@ -41,6 +41,10 @@ Lee este archivo completo antes de escribir. Es corto a propósito.
 
 Esto está probado, no es gusto. Canva es más estricto que Chrome:
 
+- **Todo texto que va junto a un adorno va en su propio `<span>`:**
+  `<p class="rotulo"><span class="raya"></span><span>Texto</span></p>`, y lo mismo en
+  `.paso`, `.nota` y cada `.casilla`. Si el texto va suelto, Canva lo pone al
+  principio de la caja y el adorno le queda encima como un tachado.
 - **Los adornos son elementos reales, no `::before`.** Dentro de cada rótulo va `<span class="raya"></span>`; en los interiores de foto va `<div class="regla-v"></div>`; dentro de la casilla grande de lista van `<span class="palomita-a"></span><span class="palomita-b"></span>`. Canva tira los pseudo-elementos sin avisar.
 - **En todos los títulos (`h1`, `h2`) los renglones se cortan a mano con `<br>`.** No dejes que el navegador parta la línea.
 - **La parte en `<em>` siempre empieza en renglón propio:** `…<br><em>…</em>`. Si arranca a media línea y se parte en dos, Canva la saca de la lámina.

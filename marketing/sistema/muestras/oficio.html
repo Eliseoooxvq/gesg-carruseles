@@ -87,7 +87,7 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-expediente.oscura h1 em{color:var(--azul-alto)} .v-expediente.clara h1 em{color:var(--azul-hondo)}
 .v-expediente .subhook{font-size:31px;line-height:1.5;margin-top:34px;max-width:27ch}
 .v-expediente.oscura .subhook{color:var(--gris2)} .v-expediente.clara .subhook{color:var(--gris)}
-.v-expediente .paso{font-size:20px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;margin-bottom:30px}
+.v-expediente .paso{display:flex;flex-direction:column;align-items:flex-start;font-size:20px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;margin-bottom:30px}
 .v-expediente .paso .raya{display:block;width:46px;opacity:.75;margin-bottom:20px}
 .v-expediente.oscura .paso{color:var(--azul-alto)} .v-expediente.clara .paso{color:var(--azul-hondo)}
 .v-expediente h2{font-size:86px;line-height:1.06;letter-spacing:-.018em;margin-bottom:38px}
@@ -197,8 +197,8 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-oficio .renglon.corto{width:58%}
 .v-oficio .marcado{display:block;margin:6px 0 26px;font-family:'Fraunces',serif;font-size:46px;line-height:1.3;color:var(--tinta)}
 .v-oficio .marcado span{background:linear-gradient(transparent 56%,rgba(72,120,186,.38) 56%);padding:0 4px}
-.v-oficio .nota{position:relative;z-index:3;margin-top:34px;padding-left:52px;font-family:'Fraunces',serif;font-style:italic;font-size:42px;line-height:1.28}
-.v-oficio .nota .raya{position:absolute;left:0;top:26px;width:36px}
+.v-oficio .nota{position:relative;z-index:3;margin-top:34px;display:flex;align-items:center;gap:16px;font-family:'Fraunces',serif;font-style:italic;font-size:42px;line-height:1.28}
+.v-oficio .nota .raya{width:36px}
 .v-oficio.clara .nota{color:var(--azul-hondo)} .v-oficio.oscura .nota{color:var(--azul-alto)}
 .v-oficio .hueco{position:relative;z-index:3;margin-top:auto}
 .v-oficio h1{font-size:112px;line-height:1.02;letter-spacing:-.02em}
@@ -232,7 +232,7 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-lista .casillas{position:relative;z-index:3;display:flex;flex-direction:column;gap:24px;margin-top:52px}
 .v-lista .casilla{display:flex;align-items:center;gap:26px;font-size:32px;font-weight:500}
 .v-lista.oscura .casilla{color:#C9D5E3}
-.v-lista .caja{width:54px;height:54px;background:rgba(143,178,220,.16);border:3px solid var(--azul-alto);border-radius:7px;flex:none}
+.v-lista .caja{width:54px;height:54px;background:#284B70;border:3px solid var(--azul-alto);border-radius:7px;flex:none}
 .v-lista .avance{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:baseline;font-size:19px;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
 .v-lista.clara .avance{color:var(--azul-hondo)} .v-lista.oscura .avance{color:var(--azul-alto)}
 .v-lista .barra-avance{position:relative;z-index:3;height:4px;background:var(--papel2);margin-top:22px}
@@ -260,38 +260,38 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 <!-- ESTILO: oficio | MUESTRA del sistema, no se publica -->
 <body>
 <section class="lamina v-oficio clara" data-document-role="page" data-label="L1 portada">
-<p class="rotulo"><span class="raya"></span>Traducción del oficio</p>
+<p class="rotulo"><span class="raya"></span><span>Traducción del oficio</span></p>
 <div class="hoja"><div class="renglon"></div><div class="renglon corto"></div><p class="marcado"><span>Se le invita a aclarar las diferencias detectadas</span></p><div class="renglon"></div><div class="renglon corto"></div></div>
-<p class="nota"><span class="raya"></span>esto todavía no es una multa</p>
+<p class="nota"><span class="raya"></span><span>esto todavía no es una multa</span></p>
 <div class="hueco"><h1>Te llegó una<br><em>carta invitación.</em></h1></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">01 / 06</span></div></section>
 
 <section class="lamina v-oficio clara" data-document-role="page" data-label="L2">
-<p class="rotulo"><span class="raya"></span>Frase 1 de 4</p>
+<p class="rotulo"><span class="raya"></span><span>Frase 1 de 4</span></p>
 <div class="dice"><span class="etiqueta">Lo que dice</span><p class="frase">“Se le invita a presentar su declaración…”</p></div>
 <div class="significa"><span class="etiqueta">Lo que significa</span><p class="frase">Todavía no te cobran.<br><b>Te están avisando.</b></p></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">02 / 06</span></div></section>
 
 <section class="lamina v-oficio oscura" data-document-role="page" data-label="L3">
-<p class="rotulo"><span class="raya"></span>Frase 2 de 4</p>
+<p class="rotulo"><span class="raya"></span><span>Frase 2 de 4</span></p>
 <div class="dice"><span class="etiqueta">Lo que dice</span><p class="frase">“…las diferencias detectadas en sus ingresos.”</p></div>
 <div class="significa"><span class="etiqueta">Lo que significa</span><p class="frase">El SAT cruzó tus facturas con tu banco.<br><b>Algo no cuadra.</b></p></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">03 / 06</span></div></section>
 
 <section class="lamina v-oficio clara" data-document-role="page" data-label="L4">
-<p class="rotulo"><span class="raya"></span>Frase 3 de 4</p>
+<p class="rotulo"><span class="raya"></span><span>Frase 3 de 4</span></p>
 <div class="dice"><span class="etiqueta">Lo que dice</span><p class="frase">“…a efecto de que regularice su situación.”</p></div>
 <div class="significa"><span class="etiqueta">Lo que significa</span><p class="frase">Es el momento<br><b>en que tú decides</b><br>cómo se arregla.</p></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">04 / 06</span></div></section>
 
 <section class="lamina v-oficio oscura" data-document-role="page" data-label="L5">
-<p class="rotulo"><span class="raya"></span>Frase 4 de 4</p>
+<p class="rotulo"><span class="raya"></span><span>Frase 4 de 4</span></p>
 <div class="dice"><span class="etiqueta">Lo que dice</span><p class="frase">“En caso de no atender la presente…”</p></div>
 <div class="significa"><span class="etiqueta">Lo que significa</span><p class="frase">Si la ignoras,<br><b>puede volverse revisión.</b></p></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">05 / 06</span></div></section>
 
 <section class="lamina v-oficio oscura cierre" data-document-role="page" data-label="L6 cierre">
-<p class="rotulo"><span class="raya"></span>GESG &middot; Área jurídica</p>
+<p class="rotulo"><span class="raya"></span><span>GESG &middot; Área jurídica</span></p>
 <h2>¿Te llegó una?<br>Mándanos la foto y<br><em>te la traducimos.</em></h2><div class="datos"><div class="tel">246 469 9493</div><div class="web">despachogesg.com</div><div class="dir">Miguel Hernández 403 I, Col. El Alto &middot; Chiautempan, Tlaxcala<br>Despacho contable con área jurídica propia &middot; Tlaxcala y Puebla</div></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">06 / 06</span></div></section>
 </body>

@@ -120,30 +120,37 @@ for (let i = 0; i < laminas.length; i++) {
 
   const destino = path.join(salida, nombrar(titulos[carrusel], carrusel, lamina));
 
-  try {
-    execFileSync(chrome, [
-      '--headless=new',
-      '--disable-gpu',
-      '--hide-scrollbars',
-      '--force-device-scale-factor=1',
-      `--window-size=${ANCHO},${ALTO}`,
-      `--screenshot=${destino}`,
-      // Las fuentes vienen de Google y tardan; sin esto sale con la
-      // tipografía de repuesto y el diseño se ve completamente distinto.
-      '--virtual-time-budget=4000',
-      `file:///${archivo.replace(/\\/g, '/')}`,
-    ], { stdio: 'ignore', timeout: 45000 });
-
-    if (fs.existsSync(destino) && fs.statSync(destino).size > 4000) {
-      hechas++;
-      if (lamina === 5) console.log(`  ${verde('ok')}  ${titulos[carrusel] || 'carrusel ' + (carrusel + 1)}`);
-    } else {
-      fallidas++;
-      console.log(`  ${rojo('falló')}  lámina ${i + 1}`);
+  // Chrome sin ventana a veces falla la primera vez que arranca en frío:
+  // el 11 de septiembre una muestra salió con 5 de 6 láminas y al repetir
+  // salieron las 6. Un segundo intento lo resuelve sin que nadie lo note.
+  let bien = false, error = '';
+  for (let intento = 1; intento <= 2 && !bien; intento++) {
+    try {
+      execFileSync(chrome, [
+        '--headless=new',
+        '--disable-gpu',
+        '--hide-scrollbars',
+        '--force-device-scale-factor=1',
+        `--window-size=${ANCHO},${ALTO}`,
+        `--screenshot=${destino}`,
+        // Las fuentes vienen de Google y tardan; sin esto sale con la
+        // tipografía de repuesto y el diseño se ve completamente distinto.
+        '--virtual-time-budget=4000',
+        `file:///${archivo.replace(/\\/g, '/')}`,
+      ], { stdio: 'ignore', timeout: 45000 });
+      bien = fs.existsSync(destino) && fs.statSync(destino).size > 4000;
+      if (!bien) error = 'la imagen salió vacía';
+    } catch (e) {
+      error = e.message.split('\n')[0];
     }
-  } catch (e) {
+  }
+
+  if (bien) {
+    hechas++;
+    if (lamina === 5) console.log(`  ${verde('ok')}  ${titulos[carrusel] || 'carrusel ' + (carrusel + 1)}`);
+  } else {
     fallidas++;
-    console.log(`  ${rojo('falló')}  lámina ${i + 1} · ${e.message.split('\n')[0]}`);
+    console.log(`  ${rojo('falló')}  lámina ${i + 1} · ${error}`);
   }
 }
 

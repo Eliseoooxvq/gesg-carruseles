@@ -253,8 +253,18 @@ ${pie('Contabilidad', 6)}</section>`,
 ]},
 };
 
+/* Canva pone el texto suelto al principio de su caja e ignora el adorno
+   que va antes: la raya del rótulo le quedaba encima como un tachado, y
+   las casillas se le encimaban al texto (probado el 11 sep). En cambio sí
+   coloca bien un texto que vive en su propio <span>, como el pie. Por eso
+   todo texto que va junto a un adorno se envuelve en su <span>. */
+const envolver = (html) => html
+  .replace(/<span class="raya"><\/span>([^<]+)</g, '<span class="raya"></span><span>$1</span><')
+  .replace(/<span class="caja"><\/span>([^<]+)</g, '<span class="caja"></span><span>$1</span><');
+
 fs.mkdirSync(path.join(SISTEMA, 'muestras'), { recursive: true });
 for (const [clave, m] of Object.entries(MUESTRAS)) {
+  m.laminas = m.laminas.map(envolver);
   const html = `<!DOCTYPE html>
 <html lang="es-MX">
 <head>
