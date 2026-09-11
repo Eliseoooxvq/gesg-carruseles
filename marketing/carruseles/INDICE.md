@@ -131,3 +131,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-10 · CT · Compraste el equipo antes de darte de alta
 - 2026-09-10 · CT · Vendiste la camioneta del negocio y eso es ingreso
 - 2026-09-10 · CT · Traes saldo a favor de IVA y ahí lleva años
+
+### Archivos HTML por carrusel — carpeta 2026-09-11/
+
+- 2026-09-11 · DF · Revisaste la lista y tu proveedor no estaba [dato]
+- 2026-09-11 · DF · Te pidieron la contabilidad y mandaste lo que no era [oficio]
+- 2026-09-11 · DF · La deuda creció sola y nadie te avisó [expediente]
+- 2026-09-11 · DF · Se te venció la e.firma con el plazo corriendo [chat]
+- 2026-09-11 · DF · Hay una oficina pública que no trabaja para el SAT [lista]
+- 2026-09-11 · CT · El tope del RESICO subiría a 5 millones [dato]
+- 2026-09-11 · CT · El negocio es tuyo pero el RFC es de otro [foto]
+- 2026-09-11 · CT · Lo que está en la bodega todavía no es gasto [lista]
+- 2026-09-11 · CT · Trabajas en tu casa: la luz, el internet y el celular [chat]
+- 2026-09-11 · CT · Mueves tu mercancía en camioneta y te falta un papel [foto]
