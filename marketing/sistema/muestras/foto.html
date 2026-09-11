@@ -45,7 +45,8 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 
 /* Rótulo con raya: se usa en casi todos los estilos */
 .rotulo{position:relative;z-index:3;display:flex;align-items:center;gap:16px;font-size:19px;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
-.rotulo::before{content:"";width:40px;height:2px;background:currentColor;flex:none}
+/* La raya es un <span class="raya"> real: Canva tira los ::before. */
+.raya{display:inline-block;width:40px;height:2px;background:currentColor;flex:none}
 .oscura .rotulo{color:var(--azul-alto)} .clara .rotulo{color:var(--azul-hondo)}
 
 /* ---- pie común: la firma que se repite en los seis ---- */
@@ -87,7 +88,7 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-expediente .subhook{font-size:31px;line-height:1.5;margin-top:34px;max-width:27ch}
 .v-expediente.oscura .subhook{color:var(--gris2)} .v-expediente.clara .subhook{color:var(--gris)}
 .v-expediente .paso{font-size:20px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;margin-bottom:30px}
-.v-expediente .paso::before{content:"";display:block;width:46px;height:2px;background:currentColor;opacity:.75;margin-bottom:20px}
+.v-expediente .paso .raya{display:block;width:46px;opacity:.75;margin-bottom:20px}
 .v-expediente.oscura .paso{color:var(--azul-alto)} .v-expediente.clara .paso{color:var(--azul-hondo)}
 .v-expediente h2{font-size:86px;line-height:1.06;letter-spacing:-.018em;margin-bottom:38px}
 .v-expediente .texto{font-size:36px;line-height:1.5;max-width:24ch;position:relative;z-index:3}
@@ -111,12 +112,12 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-foto h1 em{color:var(--azul-alto)}
 .v-foto .subhook{font-size:31px;line-height:1.5;margin-top:30px;color:#C9D5E3;max-width:28ch}
 .v-foto.interior{padding:130px 84px 210px 128px}
-.v-foto.interior::before{content:"";position:absolute;left:84px;top:130px;bottom:230px;width:3px;background:var(--azul)}
+.v-foto .regla-v{position:absolute;z-index:2;left:84px;top:130px;bottom:230px;width:3px;background:var(--azul)}
 .v-foto .paso{position:relative;z-index:3;font-size:20px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;margin-bottom:30px}
 .v-foto.oscura .paso{color:var(--azul-alto)} .v-foto.clara .paso{color:var(--azul-hondo)}
-.v-foto h2{font-size:84px;line-height:1.06;letter-spacing:-.018em;margin-bottom:36px}
+.v-foto h2{font-size:92px;line-height:1.05;letter-spacing:-.019em;margin-bottom:36px}
 .v-foto.oscura h2 em{color:var(--azul-alto)} .v-foto.clara h2 em{color:var(--azul-hondo)}
-.v-foto .texto{font-size:36px;line-height:1.5;max-width:24ch;position:relative;z-index:3}
+.v-foto .texto{font-size:39px;line-height:1.46;max-width:24ch;position:relative;z-index:3}
 .v-foto.oscura .texto{color:#B7C3D1} .v-foto.clara .texto{color:#3D4B5C}
 .v-foto .texto b{font-weight:600}
 .v-foto.oscura .texto b{color:var(--papel)} .v-foto.clara .texto b{color:var(--tinta)}
@@ -144,10 +145,10 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-dato.clara h1 em{color:var(--azul-hondo)} .v-dato.oscura h1 em{color:var(--azul-alto)}
 .v-dato .subhook{position:relative;z-index:3;font-size:30px;line-height:1.5;margin-top:26px;max-width:28ch}
 .v-dato.clara .subhook{color:var(--gris)} .v-dato.oscura .subhook{color:var(--gris2)}
-.v-dato.interior .cifra{font-size:190px;margin-top:70px}
-.v-dato h2{font-size:64px;line-height:1.1;letter-spacing:-.015em;margin-top:auto;max-width:18ch}
+.v-dato.interior .cifra{font-size:230px;margin-top:64px}
+.v-dato h2{font-size:76px;line-height:1.07;letter-spacing:-.016em;margin-top:auto;max-width:17ch}
 .v-dato.clara h2 em{color:var(--azul-hondo)} .v-dato.oscura h2 em{color:var(--azul-alto)}
-.v-dato .texto{position:relative;z-index:3;font-size:34px;line-height:1.5;margin-top:26px;max-width:26ch}
+.v-dato .texto{position:relative;z-index:3;font-size:39px;line-height:1.46;margin-top:28px;max-width:25ch}
 .v-dato.clara .texto{color:#3D4B5C} .v-dato.oscura .texto{color:#B7C3D1}
 .v-dato .texto b{font-weight:600}
 .v-dato.clara .texto b{color:var(--tinta)} .v-dato.oscura .texto b{color:var(--papel)}
@@ -167,16 +168,16 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-chat .quien{display:flex;flex-direction:column;gap:6px}
 .v-chat .quien b{font-size:28px;font-weight:600;color:var(--papel)}
 .v-chat .quien span{font-size:20px;color:var(--gris2)}
-.v-chat .hilo{position:relative;z-index:3;display:flex;flex-direction:column;gap:22px;padding:46px 60px 0}
-.v-chat .globo{max-width:80%;font-size:33px;line-height:1.42;padding:26px 32px;border-radius:30px}
+.v-chat .hilo{position:relative;z-index:3;display:flex;flex-direction:column;gap:28px;padding:56px 60px 0}
+.v-chat .globo{max-width:86%;font-size:42px;line-height:1.36;padding:30px 38px;border-radius:34px}
 .v-chat .entra{align-self:flex-start;background:var(--papel);color:var(--tinta);border-bottom-left-radius:8px}
 .v-chat .sale{align-self:flex-end;background:var(--azul-hondo);color:var(--blanco);border-bottom-right-radius:8px}
 .v-chat .globo b{font-weight:600}
-.v-chat .hora{display:block;font-size:17px;margin-top:10px;opacity:.62;text-align:right}
+.v-chat .hora{display:block;font-size:20px;margin-top:10px;opacity:.62;text-align:right}
 .v-chat .hueco{position:relative;z-index:3;margin-top:auto;padding:0 60px}
-.v-chat h1{font-size:94px;line-height:1.04;letter-spacing:-.02em;color:var(--papel)}
+.v-chat h1{font-size:112px;line-height:1.02;letter-spacing:-.02em;color:var(--papel)}
 .v-chat h1 em{color:var(--azul-alto)}
-.v-chat h2{font-size:58px;line-height:1.12;letter-spacing:-.015em;color:var(--papel)}
+.v-chat h2{font-size:78px;line-height:1.07;letter-spacing:-.016em;color:var(--papel)}
 .v-chat h2 em{color:var(--azul-alto)}
 .v-chat .paso{position:relative;z-index:3;font-size:19px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--azul-alto);margin-bottom:22px}
 .v-chat .datos{margin-top:34px}
@@ -194,25 +195,25 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-oficio.oscura .hoja{border-color:transparent}
 .v-oficio .renglon{height:14px;background:var(--papel2);border-radius:2px;margin-bottom:20px}
 .v-oficio .renglon.corto{width:58%}
-.v-oficio .marcado{display:block;margin:6px 0 26px;font-family:'Fraunces',serif;font-size:38px;line-height:1.35;color:var(--tinta)}
+.v-oficio .marcado{display:block;margin:6px 0 26px;font-family:'Fraunces',serif;font-size:46px;line-height:1.3;color:var(--tinta)}
 .v-oficio .marcado span{background:linear-gradient(transparent 56%,rgba(72,120,186,.38) 56%);padding:0 4px}
-.v-oficio .nota{position:relative;z-index:3;margin-top:30px;padding-left:52px;font-family:'Fraunces',serif;font-style:italic;font-size:34px;line-height:1.3}
-.v-oficio .nota::before{content:"";position:absolute;left:0;top:22px;width:36px;height:2px;background:currentColor}
+.v-oficio .nota{position:relative;z-index:3;margin-top:34px;padding-left:52px;font-family:'Fraunces',serif;font-style:italic;font-size:42px;line-height:1.28}
+.v-oficio .nota .raya{position:absolute;left:0;top:26px;width:36px}
 .v-oficio.clara .nota{color:var(--azul-hondo)} .v-oficio.oscura .nota{color:var(--azul-alto)}
 .v-oficio .hueco{position:relative;z-index:3;margin-top:auto}
-.v-oficio h1{font-size:100px;line-height:1.02;letter-spacing:-.02em}
+.v-oficio h1{font-size:112px;line-height:1.02;letter-spacing:-.02em}
 .v-oficio.clara h1 em{color:var(--azul-hondo)} .v-oficio.oscura h1 em{color:var(--azul-alto)}
 .v-oficio .dice,.v-oficio .significa{position:relative;z-index:3;padding:28px 0 28px 38px;border-left:3px solid}
 .v-oficio .dice{margin-top:auto}
-.v-oficio .significa{margin-top:34px}
+.v-oficio .significa{margin-top:44px;margin-bottom:auto}
 .v-oficio.clara .dice{border-color:var(--gris2)} .v-oficio.oscura .dice{border-color:rgba(147,163,181,.45)}
 .v-oficio .significa{border-color:var(--azul)}
-.v-oficio .etiqueta{display:block;font-size:18px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px}
+.v-oficio .etiqueta{display:block;font-size:20px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;margin-bottom:18px}
 .v-oficio.clara .dice .etiqueta{color:var(--gris)} .v-oficio.oscura .dice .etiqueta{color:var(--gris2)}
 .v-oficio.clara .significa .etiqueta{color:var(--azul-hondo)} .v-oficio.oscura .significa .etiqueta{color:var(--azul-alto)}
-.v-oficio .dice .frase{font-size:32px;line-height:1.45;font-style:italic}
+.v-oficio .dice .frase{font-size:41px;line-height:1.4;font-style:italic}
 .v-oficio.clara .dice .frase{color:var(--gris)} .v-oficio.oscura .dice .frase{color:var(--gris2)}
-.v-oficio .significa .frase{font-family:'Fraunces',serif;font-size:46px;line-height:1.24;font-weight:500}
+.v-oficio .significa .frase{font-family:'Fraunces',serif;font-size:64px;line-height:1.16;font-weight:500}
 .v-oficio.clara .significa .frase{color:var(--tinta)} .v-oficio.oscura .significa .frase{color:var(--papel)}
 .v-oficio .significa .frase b{font-weight:700}
 .v-oficio.clara .significa .frase b{color:var(--azul-hondo)} .v-oficio.oscura .significa .frase b{color:var(--azul-alto)}
@@ -231,19 +232,23 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-lista .casillas{position:relative;z-index:3;display:flex;flex-direction:column;gap:24px;margin-top:52px}
 .v-lista .casilla{display:flex;align-items:center;gap:26px;font-size:32px;font-weight:500}
 .v-lista.oscura .casilla{color:#C9D5E3}
-.v-lista .caja{width:54px;height:54px;border:3px solid var(--azul-alto);border-radius:7px;flex:none;position:relative}
+.v-lista .caja{width:54px;height:54px;background:rgba(143,178,220,.16);border:3px solid var(--azul-alto);border-radius:7px;flex:none}
 .v-lista .avance{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:baseline;font-size:19px;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
 .v-lista.clara .avance{color:var(--azul-hondo)} .v-lista.oscura .avance{color:var(--azul-alto)}
 .v-lista .barra-avance{position:relative;z-index:3;height:4px;background:var(--papel2);margin-top:22px}
 .v-lista.oscura .barra-avance{background:rgba(147,163,181,.25)}
 .v-lista .barra-avance span{display:block;height:100%;background:var(--azul)}
-.v-lista .caja-grande{position:relative;z-index:3;width:150px;height:150px;border:6px solid;border-radius:16px;margin-top:auto}
-.v-lista.clara .caja-grande{border-color:var(--azul-hondo)} .v-lista.oscura .caja-grande{border-color:var(--azul-alto)}
-.v-lista .caja-grande::after{content:"";position:absolute;left:43px;top:10px;width:42px;height:86px;border:solid;border-width:0 13px 13px 0;transform:rotate(45deg)}
-.v-lista.clara .caja-grande::after{border-color:var(--azul-hondo)} .v-lista.oscura .caja-grande::after{border-color:var(--azul-alto)}
-.v-lista h2{font-size:78px;line-height:1.08;letter-spacing:-.016em;margin-top:46px}
+/* Casilla rellena con la palomita hecha de dos barras giradas: son
+   elementos con fondo, que Canva sí importa. El giro es desde el centro
+   (sin transform-origin) porque Canva gira siempre desde el centro. */
+.v-lista .caja-grande{position:relative;z-index:3;width:150px;height:150px;border-radius:18px;margin-top:auto;flex:none}
+.v-lista .palomita-a,.v-lista .palomita-b{position:absolute;height:15px;border-radius:8px;background:var(--blanco)}
+.v-lista .palomita-a{left:25px;top:86px;width:43px;transform:rotate(41deg)}
+.v-lista .palomita-b{left:43px;top:67px;width:89px;transform:rotate(-46deg)}
+.v-lista.clara .caja-grande{background:var(--azul-hondo)} .v-lista.oscura .caja-grande{background:var(--azul)}
+.v-lista h2{font-size:86px;line-height:1.06;letter-spacing:-.017em;margin-top:46px}
 .v-lista.clara h2 em{color:var(--azul-hondo)} .v-lista.oscura h2 em{color:var(--azul-alto)}
-.v-lista .texto{position:relative;z-index:3;font-size:34px;line-height:1.5;margin-top:26px;max-width:26ch}
+.v-lista .texto{position:relative;z-index:3;font-size:39px;line-height:1.46;margin-top:28px;max-width:25ch}
 .v-lista.clara .texto{color:#3D4B5C} .v-lista.oscura .texto{color:#B7C3D1}
 .v-lista .texto b{font-weight:600}
 .v-lista.clara .texto b{color:var(--tinta)} .v-lista.oscura .texto b{color:var(--papel)}
@@ -256,23 +261,27 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 <body>
 <section class="lamina v-foto oscura" data-document-role="page" data-label="L1 portada">
 <img class="foto" src="https://raw.githubusercontent.com/Eliseoooxvq/gesg-carruseles/master/marketing/fotos/tinta/sala-asesoria.jpg" alt="Sala de asesoría de GESG en Chiautempan">
-<p class="rotulo">Chiautempan, Tlaxcala</p>
+<p class="rotulo"><span class="raya"></span>Chiautempan, Tlaxcala</p>
 <div class="hueco"><h1>El que lleva<br>tus números<br><em>te defiende.</em></h1><p class="subhook">Un despacho contable con abogado adentro.</p></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">01 / 06</span></div></section>
 
 <section class="lamina v-foto oscura interior" data-document-role="page" data-label="L2">
-<div class="abajo"><p class="paso">Lo normal</p><h2>Tu contador<br>no puede<br>defenderte</h2><p class="texto">Lleva tus números, pero pelear un acto de autoridad <b>no es su trabajo.</b></p></div>
+<div class="regla-v"></div>
+<div class="abajo"><p class="paso">Lo normal</p><h2>Tu contador<br>no puede<br>defenderte</h2><p class="texto">Lleva tus números, pero pelear contra la autoridad <b>no es su trabajo.</b></p></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">02 / 06</span></div></section>
 
 <section class="lamina v-foto clara interior" data-document-role="page" data-label="L3">
-<div class="abajo"><p class="paso">Lo que pasa después</p><h2>Buscas un<br>abogado<br>de fuera</h2><p class="texto">Y hay que explicarle tu negocio desde cero. <b>Mientras, el plazo sigue.</b></p></div>
+<div class="regla-v"></div>
+<div class="abajo"><p class="paso">Lo que pasa después</p><h2>Buscas un<br>abogado<br>de fuera</h2><p class="texto">Y hay que explicarle tu negocio desde cero. <b>El plazo sigue.</b></p></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">03 / 06</span></div></section>
 
 <section class="lamina v-foto oscura interior" data-document-role="page" data-label="L4">
-<div class="abajo"><p class="paso">Aquí es distinto</p><h2>Somos las<br><em>dos cosas</em></h2><p class="texto">Quien revisa tu oficio <b>tiene enfrente tu contabilidad.</b></p></div>
+<div class="regla-v"></div>
+<div class="abajo"><p class="paso">Aquí es distinto</p><h2>Somos las<br><em>dos cosas</em></h2><p class="texto">Quien revisa tu oficio <b>tiene tu contabilidad</b> enfrente.</p></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">04 / 06</span></div></section>
 
 <section class="lamina v-foto clara interior" data-document-role="page" data-label="L5">
+<div class="regla-v"></div>
 <div class="abajo"><p class="paso">Y estamos aquí</p><h2>A la vuelta,<br>no en la capital</h2><p class="texto">Atendemos <b>Tlaxcala y Puebla</b>. Si hay que ir a defenderte, se va.</p></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">05 / 06</span></div></section>
 
