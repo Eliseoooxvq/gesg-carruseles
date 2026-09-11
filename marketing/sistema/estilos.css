@@ -1,0 +1,242 @@
+/* =====================================================================
+   SISTEMA DE CARRUSELES GESG — seis estilos, una sola marca
+   ---------------------------------------------------------------------
+   Cada carrusel usa UNO de los seis estilos. Lo que no cambia entre
+   ellos —y es lo que hace que el feed se sepa de GESG aunque cada
+   publicación se vea distinta— es esto:
+     · la paleta: azul del logo #4878BA sobre azul casi negro y papel frío
+     · las dos tipografías: Fraunces para lo que pesa, Inter para lo demás
+     · el pie: GESG · área · folio, siempre en el mismo lugar
+
+   Todo está acotado por la clase del estilo (.v-expediente, .v-foto…)
+   para que un estilo nunca le pise las medidas a otro. Por lo mismo,
+   el texto corrido va con la clase .texto y no con <p> a secas.
+
+   1080 × 1350 · se inserta completo en el <style> de cada archivo.
+   ===================================================================== */
+
+:root{
+  --tinta:#0B1B2E; --tinta2:#132A44;
+  --papel:#F2F4F7; --papel2:#DCE3EB;
+  --azul:#4878BA; --azul-alto:#8FB2DC; --azul-hondo:#2E5C99;
+  --gris:#6C7A8A; --gris2:#93A3B5; --blanco:#FFFFFF;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-direction:column;align-items:center;gap:26px;padding:26px}
+
+.lamina{width:1080px;height:1350px;position:relative;overflow:hidden;display:flex;flex-direction:column;font-family:'Inter',sans-serif}
+.lamina h1,.lamina h2{font-family:'Fraunces',serif;font-weight:600;font-variation-settings:'opsz' 144;position:relative;z-index:3}
+.lamina em{font-style:italic;font-weight:500}
+.oscura{background:var(--tinta);color:var(--papel)}
+.clara{background:var(--papel);color:var(--tinta)}
+
+/* Foto a sangre. Siempre un <img>: Canva lo importa como foto que se
+   puede reemplazar con dos clics. */
+.foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+
+/* Rótulo con raya: se usa en casi todos los estilos */
+.rotulo{position:relative;z-index:3;display:flex;align-items:center;gap:16px;font-size:19px;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+.rotulo::before{content:"";width:40px;height:2px;background:currentColor;flex:none}
+.oscura .rotulo{color:var(--azul-alto)} .clara .rotulo{color:var(--azul-hondo)}
+
+/* ---- pie común: la firma que se repite en los seis ---- */
+.pie{position:absolute;left:84px;right:84px;bottom:58px;z-index:5;display:flex;justify-content:space-between;align-items:baseline;font-size:19px;font-weight:500;letter-spacing:.16em;text-transform:uppercase}
+.oscura .pie{color:var(--gris2)} .clara .pie{color:var(--gris)}
+.pie b{font-weight:600;letter-spacing:.28em}
+.oscura .pie b{color:var(--papel)} .clara .pie b{color:var(--tinta)}
+.folio{font-family:'Fraunces',serif;font-weight:500;font-size:23px;letter-spacing:.08em}
+.oscura .folio{color:var(--azul-alto)} .clara .folio{color:var(--azul-hondo)}
+
+/* ---- contacto común del cierre ---- */
+.datos{position:relative;z-index:3}
+.tel{font-family:'Fraunces',serif;font-weight:600;font-size:74px;letter-spacing:.01em;line-height:1}
+.web{font-size:28px;font-weight:500;letter-spacing:.1em;margin-top:18px}
+.dir{font-size:21px;line-height:1.6;margin-top:22px}
+.oscura .tel{color:var(--papel)} .clara .tel{color:var(--tinta)}
+.oscura .web{color:var(--azul-alto)} .clara .web{color:var(--azul-hondo)}
+.oscura .dir{color:var(--gris2)} .clara .dir{color:var(--gris)}
+
+
+/* =====================================================================
+   1 · EXPEDIENTE — la lámina se ve como el papel del que habla
+   ===================================================================== */
+.v-expediente{padding:80px 84px 210px}
+.v-expediente::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.34;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:5px 5px}
+.v-expediente.clara::after{background-image:radial-gradient(rgba(11,27,46,.06) 1px,transparent 1px)}
+.v-expediente .oficio{position:relative;z-index:3;display:flex;gap:20px;align-items:center;padding-bottom:22px;border-bottom:1px solid;font-size:19px;font-weight:600;letter-spacing:.17em;text-transform:uppercase}
+.v-expediente.oscura .oficio{color:var(--gris2);border-color:rgba(147,163,181,.28)}
+.v-expediente.clara .oficio{color:var(--gris);border-color:var(--papel2)}
+.v-expediente .tachon{display:inline-block;background:currentColor;width:98px;height:13px;vertical-align:-1px;opacity:.42;border-radius:1px}
+.v-expediente .via{margin-left:auto;letter-spacing:.24em}
+.v-expediente.oscura .via{color:var(--azul-alto)} .v-expediente.clara .via{color:var(--azul-hondo)}
+.v-expediente .sello{position:absolute;z-index:4;top:246px;right:70px;border:2px solid var(--azul);color:var(--azul);font-size:21px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;padding:16px 26px;transform:rotate(-8deg);line-height:1.34;border-radius:3px}
+.v-expediente.clara .sello{border-color:var(--azul-hondo);color:var(--azul-hondo)}
+.v-expediente .sello small{display:block;font-size:14px;letter-spacing:.14em;margin-top:9px;opacity:.82;text-transform:none;font-weight:500}
+.v-expediente .hueco{margin-top:auto;position:relative;z-index:3}
+.v-expediente h1{font-size:118px;line-height:1;letter-spacing:-.021em}
+.v-expediente.oscura h1 em{color:var(--azul-alto)} .v-expediente.clara h1 em{color:var(--azul-hondo)}
+.v-expediente .subhook{font-size:31px;line-height:1.5;margin-top:34px;max-width:27ch}
+.v-expediente.oscura .subhook{color:var(--gris2)} .v-expediente.clara .subhook{color:var(--gris)}
+.v-expediente .paso{font-size:20px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;margin-bottom:30px}
+.v-expediente .paso::before{content:"";display:block;width:46px;height:2px;background:currentColor;opacity:.75;margin-bottom:20px}
+.v-expediente.oscura .paso{color:var(--azul-alto)} .v-expediente.clara .paso{color:var(--azul-hondo)}
+.v-expediente h2{font-size:86px;line-height:1.06;letter-spacing:-.018em;margin-bottom:38px}
+.v-expediente .texto{font-size:36px;line-height:1.5;max-width:24ch;position:relative;z-index:3}
+.v-expediente.oscura .texto{color:#B7C3D1} .v-expediente.clara .texto{color:#3D4B5C}
+.v-expediente .texto b{font-weight:600}
+.v-expediente.oscura .texto b{color:var(--papel)} .v-expediente.clara .texto b{color:var(--tinta)}
+.v-expediente .perfil{position:absolute;left:0;right:0;bottom:130px;z-index:2;border-top:1px dashed currentColor;opacity:.2}
+.v-expediente.cierre h2{font-size:92px;margin-bottom:0}
+.v-expediente.cierre h2 em{color:var(--azul-alto)}
+.v-expediente.cierre .datos{margin-top:52px;padding-top:38px;border-top:1px solid rgba(147,163,181,.28)}
+
+
+/* =====================================================================
+   2 · FOTO — la oficina de verdad, en tinta azul
+   Portada a sangre con foto en duotono; interiores lisos con una
+   regla azul; cierre con la foto a color: "aquí te atendemos".
+   ===================================================================== */
+.v-foto{padding:80px 84px 210px}
+.v-foto .hueco{margin-top:auto;position:relative;z-index:3}
+.v-foto h1{font-size:112px;line-height:1.02;letter-spacing:-.02em;color:var(--blanco)}
+.v-foto h1 em{color:var(--azul-alto)}
+.v-foto .subhook{font-size:31px;line-height:1.5;margin-top:30px;color:#C9D5E3;max-width:28ch}
+.v-foto.interior{padding:130px 84px 210px 128px}
+.v-foto.interior::before{content:"";position:absolute;left:84px;top:130px;bottom:230px;width:3px;background:var(--azul)}
+.v-foto .paso{position:relative;z-index:3;font-size:20px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;margin-bottom:30px}
+.v-foto.oscura .paso{color:var(--azul-alto)} .v-foto.clara .paso{color:var(--azul-hondo)}
+.v-foto h2{font-size:84px;line-height:1.06;letter-spacing:-.018em;margin-bottom:36px}
+.v-foto.oscura h2 em{color:var(--azul-alto)} .v-foto.clara h2 em{color:var(--azul-hondo)}
+.v-foto .texto{font-size:36px;line-height:1.5;max-width:24ch;position:relative;z-index:3}
+.v-foto.oscura .texto{color:#B7C3D1} .v-foto.clara .texto{color:#3D4B5C}
+.v-foto .texto b{font-weight:600}
+.v-foto.oscura .texto b{color:var(--papel)} .v-foto.clara .texto b{color:var(--tinta)}
+.v-foto .abajo{margin-top:auto}
+.v-foto.cierre{padding:84px 84px 210px}
+.v-foto .marco-foto{position:relative;z-index:3;width:100%;height:540px;overflow:hidden;border-radius:4px}
+.v-foto .marco-foto img{width:100%;height:100%;object-fit:cover;display:block}
+.v-foto .pie-foto{position:relative;z-index:3;margin-top:20px;font-size:19px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--azul-hondo)}
+.v-foto.cierre h2{font-size:62px;line-height:1.1;margin:auto 0 0}
+.v-foto.cierre h2 em{color:var(--azul-hondo)}
+.v-foto.cierre .datos{margin-top:34px}
+.v-foto.cierre .tel{font-size:66px}
+
+
+/* =====================================================================
+   3 · DATO — una cifra enorme manda
+   Para noticias y cifras con fuente. La cifra grande admite máximo
+   4 caracteres; la unidad va en <small>.
+   ===================================================================== */
+.v-dato{padding:84px 84px 210px}
+.v-dato .cifra{position:relative;z-index:3;margin-top:auto;font-family:'Fraunces',serif;font-weight:600;font-variation-settings:'opsz' 144;font-size:300px;line-height:.86;letter-spacing:-.045em;white-space:nowrap}
+.v-dato .cifra small{font-size:.34em;letter-spacing:-.02em;margin-left:.1em}
+.v-dato.clara .cifra{color:var(--azul-hondo)} .v-dato.oscura .cifra{color:var(--azul-alto)}
+.v-dato h1{font-size:74px;line-height:1.08;letter-spacing:-.015em;margin-top:44px;max-width:16ch}
+.v-dato.clara h1 em{color:var(--azul-hondo)} .v-dato.oscura h1 em{color:var(--azul-alto)}
+.v-dato .subhook{position:relative;z-index:3;font-size:30px;line-height:1.5;margin-top:26px;max-width:28ch}
+.v-dato.clara .subhook{color:var(--gris)} .v-dato.oscura .subhook{color:var(--gris2)}
+.v-dato.interior .cifra{font-size:190px;margin-top:70px}
+.v-dato h2{font-size:64px;line-height:1.1;letter-spacing:-.015em;margin-top:auto;max-width:18ch}
+.v-dato.clara h2 em{color:var(--azul-hondo)} .v-dato.oscura h2 em{color:var(--azul-alto)}
+.v-dato .texto{position:relative;z-index:3;font-size:34px;line-height:1.5;margin-top:26px;max-width:26ch}
+.v-dato.clara .texto{color:#3D4B5C} .v-dato.oscura .texto{color:#B7C3D1}
+.v-dato .texto b{font-weight:600}
+.v-dato.clara .texto b{color:var(--tinta)} .v-dato.oscura .texto b{color:var(--papel)}
+.v-dato.cierre h2{font-size:58px;max-width:20ch}
+.v-dato.cierre .tel{font-size:124px;letter-spacing:-.025em;margin-top:30px}
+.v-dato.cierre .web{margin-top:24px}
+
+
+/* =====================================================================
+   4 · CONVERSACIÓN — como un chat, porque así llega el cliente
+   Globos de papel (lo que pregunta la gente) y azules (lo que se le
+   contesta). En azul del despacho, NO en verde de WhatsApp.
+   ===================================================================== */
+.v-chat{padding:0 0 210px}
+.v-chat .barra{position:relative;z-index:3;display:flex;align-items:center;gap:22px;padding:44px 60px 30px;border-bottom:1px solid rgba(147,163,181,.2)}
+.v-chat .avatar{width:76px;height:76px;border-radius:50%;background:var(--azul-hondo);color:var(--blanco);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:600;font-size:34px;flex:none}
+.v-chat .quien{display:flex;flex-direction:column;gap:6px}
+.v-chat .quien b{font-size:28px;font-weight:600;color:var(--papel)}
+.v-chat .quien span{font-size:20px;color:var(--gris2)}
+.v-chat .hilo{position:relative;z-index:3;display:flex;flex-direction:column;gap:22px;padding:46px 60px 0}
+.v-chat .globo{max-width:80%;font-size:33px;line-height:1.42;padding:26px 32px;border-radius:30px}
+.v-chat .entra{align-self:flex-start;background:var(--papel);color:var(--tinta);border-bottom-left-radius:8px}
+.v-chat .sale{align-self:flex-end;background:var(--azul-hondo);color:var(--blanco);border-bottom-right-radius:8px}
+.v-chat .globo b{font-weight:600}
+.v-chat .hora{display:block;font-size:17px;margin-top:10px;opacity:.62;text-align:right}
+.v-chat .hueco{position:relative;z-index:3;margin-top:auto;padding:0 60px}
+.v-chat h1{font-size:94px;line-height:1.04;letter-spacing:-.02em;color:var(--papel)}
+.v-chat h1 em{color:var(--azul-alto)}
+.v-chat h2{font-size:58px;line-height:1.12;letter-spacing:-.015em;color:var(--papel)}
+.v-chat h2 em{color:var(--azul-alto)}
+.v-chat .paso{position:relative;z-index:3;font-size:19px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--azul-alto);margin-bottom:22px}
+.v-chat .datos{margin-top:34px}
+.v-chat .pie{left:60px;right:60px}
+
+
+/* =====================================================================
+   5 · TRADUCCIÓN — lo que dice el papel contra lo que significa
+   Para requerimientos, cartas y cualquier asunto que llega por escrito.
+   La frase "del oficio" es genérica: jamás un plazo con número ni un
+   artículo de ley.
+   ===================================================================== */
+.v-oficio{padding:84px 84px 210px}
+.v-oficio .hoja{position:relative;z-index:3;background:var(--blanco);border:1px solid var(--papel2);padding:46px 50px 40px;margin-top:60px;transform:rotate(-1.2deg)}
+.v-oficio.oscura .hoja{border-color:transparent}
+.v-oficio .renglon{height:14px;background:var(--papel2);border-radius:2px;margin-bottom:20px}
+.v-oficio .renglon.corto{width:58%}
+.v-oficio .marcado{display:block;margin:6px 0 26px;font-family:'Fraunces',serif;font-size:38px;line-height:1.35;color:var(--tinta)}
+.v-oficio .marcado span{background:linear-gradient(transparent 56%,rgba(72,120,186,.38) 56%);padding:0 4px}
+.v-oficio .nota{position:relative;z-index:3;margin-top:30px;padding-left:52px;font-family:'Fraunces',serif;font-style:italic;font-size:34px;line-height:1.3}
+.v-oficio .nota::before{content:"";position:absolute;left:0;top:22px;width:36px;height:2px;background:currentColor}
+.v-oficio.clara .nota{color:var(--azul-hondo)} .v-oficio.oscura .nota{color:var(--azul-alto)}
+.v-oficio .hueco{position:relative;z-index:3;margin-top:auto}
+.v-oficio h1{font-size:100px;line-height:1.02;letter-spacing:-.02em}
+.v-oficio.clara h1 em{color:var(--azul-hondo)} .v-oficio.oscura h1 em{color:var(--azul-alto)}
+.v-oficio .dice,.v-oficio .significa{position:relative;z-index:3;padding:28px 0 28px 38px;border-left:3px solid}
+.v-oficio .dice{margin-top:auto}
+.v-oficio .significa{margin-top:34px}
+.v-oficio.clara .dice{border-color:var(--gris2)} .v-oficio.oscura .dice{border-color:rgba(147,163,181,.45)}
+.v-oficio .significa{border-color:var(--azul)}
+.v-oficio .etiqueta{display:block;font-size:18px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px}
+.v-oficio.clara .dice .etiqueta{color:var(--gris)} .v-oficio.oscura .dice .etiqueta{color:var(--gris2)}
+.v-oficio.clara .significa .etiqueta{color:var(--azul-hondo)} .v-oficio.oscura .significa .etiqueta{color:var(--azul-alto)}
+.v-oficio .dice .frase{font-size:32px;line-height:1.45;font-style:italic}
+.v-oficio.clara .dice .frase{color:var(--gris)} .v-oficio.oscura .dice .frase{color:var(--gris2)}
+.v-oficio .significa .frase{font-family:'Fraunces',serif;font-size:46px;line-height:1.24;font-weight:500}
+.v-oficio.clara .significa .frase{color:var(--tinta)} .v-oficio.oscura .significa .frase{color:var(--papel)}
+.v-oficio .significa .frase b{font-weight:700}
+.v-oficio.clara .significa .frase b{color:var(--azul-hondo)} .v-oficio.oscura .significa .frase b{color:var(--azul-alto)}
+.v-oficio.cierre h2{font-size:80px;line-height:1.06;margin-top:auto}
+.v-oficio.cierre h2 em{color:var(--azul-alto)}
+.v-oficio.cierre .datos{margin-top:48px}
+
+
+/* =====================================================================
+   6 · LISTA — qué revisar, una casilla por lámina
+   El número aquí sí dice algo: es el avance de la revisión.
+   ===================================================================== */
+.v-lista{padding:84px 84px 210px}
+.v-lista h1{font-size:104px;line-height:1.02;letter-spacing:-.02em;margin-top:auto}
+.v-lista.oscura h1 em{color:var(--azul-alto)} .v-lista.clara h1 em{color:var(--azul-hondo)}
+.v-lista .casillas{position:relative;z-index:3;display:flex;flex-direction:column;gap:24px;margin-top:52px}
+.v-lista .casilla{display:flex;align-items:center;gap:26px;font-size:32px;font-weight:500}
+.v-lista.oscura .casilla{color:#C9D5E3}
+.v-lista .caja{width:54px;height:54px;border:3px solid var(--azul-alto);border-radius:7px;flex:none;position:relative}
+.v-lista .avance{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:baseline;font-size:19px;font-weight:600;letter-spacing:.22em;text-transform:uppercase}
+.v-lista.clara .avance{color:var(--azul-hondo)} .v-lista.oscura .avance{color:var(--azul-alto)}
+.v-lista .barra-avance{position:relative;z-index:3;height:4px;background:var(--papel2);margin-top:22px}
+.v-lista.oscura .barra-avance{background:rgba(147,163,181,.25)}
+.v-lista .barra-avance span{display:block;height:100%;background:var(--azul)}
+.v-lista .caja-grande{position:relative;z-index:3;width:150px;height:150px;border:6px solid;border-radius:16px;margin-top:auto}
+.v-lista.clara .caja-grande{border-color:var(--azul-hondo)} .v-lista.oscura .caja-grande{border-color:var(--azul-alto)}
+.v-lista .caja-grande::after{content:"";position:absolute;left:43px;top:10px;width:42px;height:86px;border:solid;border-width:0 13px 13px 0;transform:rotate(45deg)}
+.v-lista.clara .caja-grande::after{border-color:var(--azul-hondo)} .v-lista.oscura .caja-grande::after{border-color:var(--azul-alto)}
+.v-lista h2{font-size:78px;line-height:1.08;letter-spacing:-.016em;margin-top:46px}
+.v-lista.clara h2 em{color:var(--azul-hondo)} .v-lista.oscura h2 em{color:var(--azul-alto)}
+.v-lista .texto{position:relative;z-index:3;font-size:34px;line-height:1.5;margin-top:26px;max-width:26ch}
+.v-lista.clara .texto{color:#3D4B5C} .v-lista.oscura .texto{color:#B7C3D1}
+.v-lista .texto b{font-weight:600}
+.v-lista.clara .texto b{color:var(--tinta)} .v-lista.oscura .texto b{color:var(--papel)}
+.v-lista.cierre h2{font-size:84px;margin-top:auto}
+.v-lista.cierre .datos{margin-top:48px}
