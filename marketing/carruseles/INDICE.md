@@ -144,3 +144,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-11 · CT · Lo que está en la bodega todavía no es gasto [lista]
 - 2026-09-11 · CT · Trabajas en tu casa: la luz, el internet y el celular [chat]
 - 2026-09-11 · CT · Mueves tu mercancía en camioneta y te falta un papel [foto]
+
+### Archivos HTML por carrusel — carpeta 2026-09-12/
+
+- 2026-09-12 · DF · Te congelaron la cuenta y no debes nada (aseguramiento durante la revisión) [expediente]
+- 2026-09-12 · DF · Tu devolución está detenida: el requerimiento dentro del trámite [oficio]
+- 2026-09-12 · DF · Cuatro señales de que ese correo o mensaje no es del SAT [lista]
+- 2026-09-12 · DF · Fuiste a vender el terreno y estaba trabado (embargo anotado en el registro) [expediente]
+- 2026-09-12 · DF · Te citaron a las oficinas del SAT a aclarar diferencias [oficio]
+- 2026-09-12 · CT · El IVA que pagas no siempre se baja (requisitos del acreditamiento) [lista]
+- 2026-09-12 · CT · Le pagas a gente de fuera: publicidad, software y servicios del extranjero [chat]
+- 2026-09-12 · CT · Le devolviste el dinero y la venta sigue (nota de crédito) [foto]
+- 2026-09-12 · CT · Tienes sueldo y un negocito: los dos ingresos se suman en la anual [chat]
+- 2026-09-12 · CT · Rentas un local y hay dos formas de deducir [foto]
