@@ -157,3 +157,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-12 · CT · Le devolviste el dinero y la venta sigue (nota de crédito) [foto]
 - 2026-09-12 · CT · Tienes sueldo y un negocito: los dos ingresos se suman en la anual [chat]
 - 2026-09-12 · CT · Rentas un local y hay dos formas de deducir [foto]
+
+### Archivos HTML por carrusel — carpeta 2026-09-13/
+
+- 2026-09-13 · DF · Pasó el notificador y no estabas (citatorio y la diligencia del día siguiente) [oficio]
+- 2026-09-13 · DF · Te embargaron y el negocio sigue abierto (embargo de la negociación, con interventor) [expediente]
+- 2026-09-13 · DF · Alguien factura con tu RFC (suplantación de identidad fiscal, nómina a tu nombre) [chat]
+- 2026-09-13 · DF · Compraste el negocio y venía con la deuda (adquirente de negociación) [lista]
+- 2026-09-13 · DF · Se te venció el plazo, ¿ya no hay nada? (notificación mal hecha y revisión de la propia autoridad) [expediente]
+- 2026-09-13 · CT · El cliente no te pagó y tú ya pagaste (cuentas incobrables) [foto]
+- 2026-09-13 · CT · El prellenado no es tu número (la declaración precargada sale de tus CFDI) [chat]
+- 2026-09-13 · CT · Las pérdidas de años pasados, al 50% (propuesta del Paquete 2027) [dato]
+- 2026-09-13 · CT · Le diste dinero para el viaje y no comprobó (viáticos) [lista]
+- 2026-09-13 · CT · La nómina en efectivo no se deduce (medio de pago de sueldos) [foto]
