@@ -177,3 +177,59 @@ cierto — casi todos describían el contenido en vez de dar una razón para seg
 
 **La prueba final:** lee el título solo, tapando el texto de abajo. Si no te dan
 ganas de saber qué sigue, no sirve y se reescribe.
+
+---
+
+## 10. La prueba de doña Lupe
+
+La vara de todo lo que se escribe, y la puso él el 14 de septiembre:
+
+> *«Si doña Lupe de la tiendita de la esquina lo ve, no lo va a entender.»*
+
+Doña Lupe tiene un changarro, factura, paga nómina a dos personas y **nunca ha
+estudiado contabilidad**. Si una lámina la deja fuera, no sirve — aunque esté
+técnicamente perfecta.
+
+### Palabras que ella no usa, y con qué se cambian
+
+| No | Sí |
+|---|---|
+| su facultad caduca · prescripción | se les acaba el tiempo para revisarte · para cobrarte |
+| determinar un crédito | decirte cuánto debes |
+| persona moral | las empresas |
+| se acredita contra | se va restando de |
+| solicitar en devolución | pedir que te lo regresen |
+| retención · retener · enterar | te descuentan · lo paga por ti |
+| exento · no gravado | libre de impuesto |
+| CFDI de nómina con su clave | el recibo de nómina |
+| avalúo · inconformarse | el precio que le pusieron · reclamar |
+| el alcance de la orden | lo que dice ese papel |
+| la anual | tu declaración del año |
+| expediente · procedimiento | los papeles · por su lado |
+
+La única excepción es el estilo **oficio**: ahí la parte de «lo que dice» va en
+lenguaje de oficio a propósito, porque de eso se trata. Pero «lo que significa»
+se escribe como le hablarías a doña Lupe.
+
+### Alarmante no es gritar
+
+Ella también pidió que suenen **más alarmantes**. Eso NO es exagerar ni amenazar
+—sigue prohibido, y además tumba anuncios—. Es decir en palabras de tienda **qué
+le puede pasar en concreto**:
+
+| Tibio | Alarmante y cierto |
+|---|---|
+| No lo dejes para después | **Si lo dejas, te congelan la cuenta** |
+| Ese valor se puede pelear | **Si la valuaron muy barata, se reclama** |
+| Después se publica la convocatoria | **Cuando lo anuncian, ya casi la pierdes** |
+| Deducciones que no embonan | **Te pueden quitar esa deducción** |
+| No siempre queda pagado | **Puede que aún debas más** |
+
+El susto viene del hecho concreto, nunca del adjetivo. Y siempre sobre **el
+reloj o la consecuencia**, nunca sobre la persona: quien se siente tonto se
+esconde y no escribe.
+
+### Cómo se revisa
+
+Lee la lámina completa en voz alta imaginando que se la lees a ella en el
+mostrador. Si tienes que explicarle una palabra, esa palabra se cambia.
