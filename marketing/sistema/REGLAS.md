@@ -233,3 +233,81 @@ esconde y no escribe.
 
 Lee la lámina completa en voz alta imaginando que se la lees a ella en el
 mostrador. Si tienes que explicarle una palabra, esa palabra se cambia.
+
+## 11. Háblale a alguien, y háblale como amigo
+
+Esta es la regla que más se rompe y la que más duele: un carrusel que explica un
+tema no le habla a nadie. El lector lo lee, entiende, y sigue de largo porque
+nunca sintió que fuera con él.
+
+**Cada lámina —no sólo la portada— tiene que ir dirigida a una persona.** No al
+público, no «a los contribuyentes»: a una sola persona que está del otro lado
+del mostrador.
+
+### Lo primero de la portada dice a quién le habla
+
+Antes que el título, la portada tiene que decir de quién es el problema. Según
+el estilo, eso va en el rótulo, en la línea de apoyo o en el primer globo:
+
+| Estilo | Dónde va | Ejemplo |
+|---|---|---|
+| expediente · foto · dato | rótulo o subhook | *Si tienes trabajadores dados de alta, esto te toca.* |
+| lista · oficio | rótulo | *Si te embargaron algo* · *Si te llegó una orden de visita* |
+| chat | el primer globo que entra | *Me llegó algo del SAT y dicen que puede ser más que pagar.* |
+
+La fórmula que nunca falla es **«Si te…» / «Si tienes…» / «Si vendes…»**: pone
+al lector adentro o lo deja ir, y las dos cosas están bien.
+
+### El sujeto de la frase eres tú, no la autoridad
+
+Es el cambio que vuelve cercano todo lo demás. Misma información, otro dueño:
+
+| Explicando el tema | Hablándole a él |
+|---|---|
+| No la rematan así nomás | **No te la rematan de un día para otro** |
+| Es el papel donde viene cuánto creen que debes | **Ábrelo: ahí viene cuánto dicen que debes** |
+| La propuesta alcanza a las empresas | **Ya no es nada más para ti como persona** |
+| Antes se podía. Ya no. | **Antes podías. Ya no.** |
+| El notario ya te retuvo | **El notario ya te descontó** |
+| Cambió la regla | **Si lo sigues haciendo, se te junta una diferencia** |
+
+### Cómo habla un amigo
+
+Un amigo no da cátedra: te avisa. Se le nota en tres cosas.
+
+1. **Te manda hacer algo.** *Ábrelo aunque te dé flojera* · *Avísale antes, no
+   después* · *Espérate tantito* · *Guárdalo* · *No firmes a lo tonto.*
+2. **Te calma o te pica antes del dato.** *Tranquilo:* … · *Hazme caso:* … ·
+   *Pero aguas,* … · *Y ahí no para:* … · *Sí, hace años se podía.*
+3. **Cierra con lo que a ti te cuesta.** *…y te ahorras el coraje* · *…y ni te
+   enteras* · *…te sale más caro y con la cuenta congelada.*
+
+Uno por lámina basta. Dos ya suena a que te está vendiendo algo.
+
+### También los rótulos y las casillas
+
+Las etiquetas chiquitas cuentan. Son las que van llevando al lector de la mano:
+
+| Frío | Dirigido |
+|---|---|
+| Lo que está pasando | Lo que te está pasando |
+| A quién alcanza | A ti también te toca |
+| Qué revisar hoy | Qué te conviene hacer hoy |
+| Lo que se puede caer | Lo que se te puede caer |
+| Lo que dice · Lo que significa | Lo que dice tu papel · Qué te está diciendo |
+
+### Lo que no se vale
+
+- Hablarle de **usted**: aquí es de tú, siempre.
+- Llamarle «contribuyente», «el cliente» o «la gente». Es **tú**.
+- Fingir confianza con apodos («mi buen», «carnal»). Es un amigo que sabe del
+  tema, no un vendedor de la calle.
+- Tutearlo en el título y volver a explicar en el cuerpo. Si la lámina cambia de
+  voz a media página, se siente falsa.
+
+### Cómo se revisa
+
+Lee cada lámina y pregúntate **¿a quién se lo estoy diciendo?**. Si la respuesta
+es «a nadie» o «al que sepa del tema», se reescribe. Y si puedes quitarle todos
+los *te*, *tu* y *tus* sin que la frase cambie, es que estabas explicando un
+tema, no hablándole a alguien.
