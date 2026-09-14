@@ -170,3 +170,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-13 · CT · Las pérdidas de años pasados, al 50% (propuesta del Paquete 2027) [dato]
 - 2026-09-13 · CT · Le diste dinero para el viaje y no comprobó (viáticos) [lista]
 - 2026-09-13 · CT · La nómina en efectivo no se deduce (medio de pago de sueldos) [foto]
+
+### Archivos HTML por carrusel — carpeta 2026-09-14/
+
+- 2026-09-14 · DF · No todo lo que te cobra fuerte es el SAT (el IMSS y el Infonavit cobran por su cuenta) [expediente]
+- 2026-09-14 · DF · No todo termina en dinero (cuándo un asunto fiscal deja de ser sólo un cobro) [chat]
+- 2026-09-14 · DF · La orden trae un alcance (contribuciones y ejercicio que se revisan) [oficio]
+- 2026-09-14 · DF · Te revisaron y nunca salió nada (caducidad de la facultad vs. prescripción del cobro) [expediente]
+- 2026-09-14 · DF · Te trabaron la camioneta y ahí no acaba (avalúo, convocatoria y remate) [lista]
+- 2026-09-14 · CT · 2.5% sería la retención si das tu RFC (plataformas tecnológicas, Paquete 2027) [dato]
+- 2026-09-14 · CT · Tu saldo a favor no paga eso (se acabó compensar entre impuestos distintos) [chat]
+- 2026-09-14 · CT · Tu RFC dice una cosa y tú haces otra (actividad registrada vs. lo que facturas) [foto]
+- 2026-09-14 · CT · El aguinaldo no se junta en diciembre (retención, clave en el CFDI, parte exenta) [lista]
+- 2026-09-14 · CT · Vendiste el terreno y falta un pago (la retención del notario es a cuenta) [foto]
