@@ -74,6 +74,30 @@ Cuéntalos. Si un renglón se pasa, en Canva se sale de la lámina.
 - Nunca fotos de internet, de bancos de imágenes ni generadas. Son las de la oficina real o ninguna.
 - Cada `<img>` lleva un `alt` que diga qué se ve.
 
+## 5 bis. El título tiene que sostenerse solo
+
+Esto salió de una revisión real del 14 de septiembre: varias láminas tenían
+frases que sonaban bien pero no se entendían. Antes de dar por buena una lámina,
+pásale estas tres:
+
+1. **El título dice una idea completa.** Si termina a media frase, no sirve.
+   Mal: *«Un error / no es lo mismo»* — ¿no es lo mismo que qué?
+   Bien: *«Error de cálculo / o factura falsa»*.
+2. **El título afirma algo, no nombra un tema.**
+   Mal: *«Quién está / señalado»*. Bien: *«Ser su cliente / no te hace igual»*.
+3. **El título y el texto dicen lo mismo.** Si el título habla de tu cuenta
+   bancaria, el texto no puede estar hablando del Infonavit. Y el rótulo tampoco
+   puede contradecir al título: si el rótulo dice *«Lo que sí te decimos»*, el
+   título no puede ser *«Nadie te promete nada»*.
+
+Lo mismo aplica a la cifra del estilo **dato**: tiene que apoyar al título, no
+pelearse con él. Si el título dice que todavía no es ley, la cifra no puede
+gritar un mes como si ya tuviera fecha.
+
+Y la última frase del texto se lee en voz alta antes de darla por buena: si hay
+que releerla para entenderla, se reescribe. Nada de remates ingeniosos que se
+quedan a medias.
+
 ## 6 bis. El marco de foto — para que no se vean planos
 
 **Cada carrusel lleva UN marco de foto en un interior**, normalmente la lámina 3,
