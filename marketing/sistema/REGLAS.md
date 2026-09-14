@@ -137,3 +137,43 @@ plazos en días con número ni artículos de ley, no inventar casos ni cifras, n
 de familiar, migratorio, laboral ni lesiones. En el estilo oficio, la frase de
 "lo que dice" es **genérica**, del tipo de las que traen estos papeles: nunca un
 número de días, nunca un artículo, nunca el texto de un oficio real de un cliente.
+
+---
+
+## 9. Títulos que dan ganas de pasar la lámina
+
+Que el título se entienda no basta. Esto salió de una revisión del 14 de
+septiembre: *«están bien chafas, así no me dan ganas de leer el carrusel»*. Y era
+cierto — casi todos describían el contenido en vez de dar una razón para seguir.
+
+| No jala, es etiqueta de índice | Jala |
+|---|---|
+| El IMSS tiene su propio cobro | **El SAT ni se entera** |
+| Primero llega una cédula de liquidación | **Ese papel ya trae el número** |
+| Para deducirlo hay que timbrarlo | **Sin timbre no hay deducción** |
+| Ese valor se puede pelear | **Ese precio se pelea** |
+| Al trabajador no le gravan todo | **Una parte no se grava** |
+
+**Cada título tiene que hacer al menos una de estas tres:**
+
+1. **Caerle a él.** Segunda persona y el costo concreto.
+   *«Espéralo y te lo cobran de la cuenta»*, no *«No lo dejes para después»*.
+2. **Contradecir lo que daba por hecho.**
+   *«Tú cambiaste. Tu RFC no.»* · *«Antes sí. Ya no.»*
+3. **Abrir algo que la siguiente lámina cierra.**
+   *«Y todavía falta el tercero.»* · *«Si no, peor.»*
+
+**Reglas del oficio:**
+
+- **Cortos.** Si cabe en menos renglones que el tope, mejor. *«Antes sí. Ya no.»*
+  pesa más que cualquier explicación.
+- **Verbo, no sustantivo.** *«Tus facturas te delatan»* pesa más que
+  *«Descripción de tus facturas»*.
+- **Nada de empezar con «Lo que», «Cómo» o «Qué es».** Ésos son títulos de índice,
+  y esa función ya la cumple el rótulo de arriba.
+- **El rótulo clasifica, el título golpea.** Si los dos dicen lo mismo, sobra uno.
+- **Sin exagerar y sin prometer.** El jalón sale de ser específico, no de gritar.
+  Nunca a costa de las reglas duras.
+
+**La prueba final:** lee el título solo, tapando el texto de abajo. Si no te dan
+ganas de saber qué sigue, no sirve y se reescribe.
