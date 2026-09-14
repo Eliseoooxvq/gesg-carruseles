@@ -311,3 +311,116 @@ Lee cada lámina y pregúntate **¿a quién se lo estoy diciendo?**. Si la respu
 es «a nadie» o «al que sepa del tema», se reescribe. Y si puedes quitarle todos
 los *te*, *tu* y *tus* sin que la frase cambie, es que estabas explicando un
 tema, no hablándole a alguien.
+
+## 12. Cada carrusel es una historia, y le pasa a Juanito
+
+Cuatro datos sueltos no son un carrusel. El cliente lo dijo así: *"no me
+explicas de dónde sale esta situación o qué la origina, me haces las
+publicaciones como a la mitad… si veo la de la camioneta es como de qué
+camioneta"*. El que ya vivió el problema entiende; el que no —que es el que
+todavía se puede salvar— no sabe ni de qué le hablan.
+
+Desde el 14 de septiembre de 2026, **las cinco láminas cuentan una sola
+historia**, y la historia le pasa a **Juanito**.
+
+### Quién es Juanito
+
+Juanito es el personaje de la casa. Es **el mismo en todos los carruseles**:
+dueño de un negocio chico de Tlaxcala o Puebla, de esos que abren temprano,
+atienden ellos mismos y traen la cabeza en vender, no en papeles.
+
+- **No es un cliente del despacho**, ni real ni disfrazado. Es un personaje,
+  como el de los dichos. Nunca se le pone apellido, ni negocio con nombre, ni
+  cantidades de un caso concreto. Lo que le pasa le pasa a cualquiera en esa
+  situación: por eso es cierto aunque él sea inventado. Eso además cuida el
+  secreto profesional, porque ningún asunto real se cuenta.
+- **No es tonto ni flojo.** Está ocupado y nadie le avisó. Si el lector se
+  siente retratado como el tonto, se esconde y no escribe.
+- **El «ay, Juanito» es de compadre**: con cariño y con algo de risa, como
+  cuando alguien tropieza con la misma piedra. Nunca regaño, burla ni lástima.
+
+Existe para poder enseñar el error **sin apuntarle al que lee**: el golpe se lo
+lleva Juanito, el consejo se lo lleva él.
+
+### El arco, lámina por lámina — son DIEZ, no seis
+
+Cuatro láminas obligaban a apretar el texto, y apretado se pierde el detalle.
+Con diez, cada lámina carga **una sola idea y poco texto**: se lee como cómic,
+deslizando. El detalle no se quita, se reparte.
+
+| # | Qué cuenta | Voz |
+|---|---|---|
+| 1 | **portada** — Juanito ya con el problema encima. El rótulo o el subhook dicen a quién le habla | 3ª + el rótulo de tú |
+| 2 | **así empezó** — Juanito haciendo algo normal, de todos los días | 3ª, pasado |
+| 3 | **lo que no sabía** — el detalle que ya lo estaba metiendo en el problema | 3ª |
+| 4 | **lo que se fue juntando** — pasa el tiempo y crece solo, en silencio | 3ª |
+| 5 | **el día que llegó** — qué le llegó, quién se lo mandó, dónde se lo dejaron | 3ª |
+| 6 | **lo que hizo Juanito** — su reacción, que es justo el error | 3ª |
+| 7 | **dónde acabó** — la consecuencia concreta y cara | 3ª |
+| 8 | **el remate** — «Ay, Juanito. No aprendes.» | — |
+| 9 | **¿y tú?** — qué hacer hoy, en concreto y fácil | **2ª — de tú** |
+| 10 | **cierre** — el llamado a escribir | 2ª |
+
+**La lámina 2 es la que más se rompe.** Tiene prohibido empezar con un papel,
+una revisión o un cobro: eso ya es la 5. Empieza en la vida diaria — contrató a
+dos muchachos, le compró a un cuate más barato, puso la camioneta a nombre del
+negocio, firmó la escritura.
+
+Y la prueba del arco: al leer la 7 se tiene que entender que viene de la 2. Si
+no, no es una historia, son datos en fila.
+
+### Prohibido el sustantivo hueco
+
+Es lo que el cliente reclamó con estas palabras: *«¿Juanito guardó QUÉ?»*. Si
+escribes «ese año», «ese papel», «el asunto», «algo del SAT» o «eso» sin haber
+dicho antes qué es, el lector se pierde.
+
+| Hueco | Con nombre |
+|---|---|
+| Juanito guardó ese año en una caja | Entregó las facturas de ese año y nunca le dijeron en qué quedó |
+| Un día le llegó un papel | Un señor del IMSS dejó la hoja con uno de los muchachos |
+| Lo guardó | Lo guardó en el cajón de los tickets |
+| Le embargaron la camioneta | Les dio las llaves sin discutir |
+
+Cada lámina tiene que dejar **una imagen en la cabeza**: el cajón de los
+tickets, la bodeguita, el mostrador, el gafete, la venta fuerte de diciembre.
+No es adorno — es lo que hace que se lea como cuento y no como aviso. Y
+entretenido no es chistoso: es que se quiera saber cómo acaba.
+
+### Los largos, medidos — no a ojo
+
+Estos números salieron del medidor (`desbordes.mjs`), que abre las láminas en
+el navegador con la tipografía y las fotos ya cargadas y compara caja por caja.
+No son estimaciones:
+
+| Campo | Largo |
+|---|---|
+| `texto` y `traduccion` | 70 a 115 caracteres |
+| el cuerpo de la lámina 8 (el remate) | 30 a 60 — una sola línea |
+| `sale` (lo que contesta GESG en el chat) | 80 a 130 |
+| `entra` (lo que escribe Juanito) | 30 a 75 |
+| renglón de `h1` / `h2` | el tope de su estilo (§5) |
+| rótulos chiquitos | 26 |
+
+**El estilo chat es el más apretado de los seis.** Con dos globos largos ya no
+caben tres renglones de título: ahí el título va de **dos renglones**, y si el
+medidor marca desborde se recortan los globos, no el título.
+
+Las láminas que llevan foto pierden unos 380px de alto, así que ahí el cuerpo
+se va al extremo bajo del rango. El generador decide cuáles llevan foto
+(dos por carrusel), así que lo seguro es escribir todos los cuerpos cortos.
+
+**Antes de subir nada, se pasa el medidor.** Si dice que algo se sale, se sale
+de verdad: en Canva sale cortado y ya no hay vuelta.
+
+### En el estilo chat
+
+El que le escribe al despacho **es Juanito**. La conversación es él
+preguntando y GESG contestando, y el remate llega igual en la lámina 5.
+
+### Lo que no cambia
+
+Las secciones 10 y 11 siguen mandando: palabras de tienda, y de tú cuando le
+hablas al lector. Juanito no es permiso para escribir bonito ni para adornar.
+Y los hechos no se tocan nunca para que la historia cuadre mejor: si un dato
+no cabe en la historia, se cambia la historia.
