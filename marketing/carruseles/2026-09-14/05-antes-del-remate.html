@@ -67,6 +67,27 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .oscura .dir{color:var(--gris2)} .clara .dir{color:var(--gris)}
 
 
+
+/* ---------------------------------------------------------------------
+   MARCO DE FOTO — el hueco para que el post no se vea plano.
+   Va una vez por carrusel, en un interior y justo debajo del encabezado:
+   ahi es donde estos disenos tienen aire de sobra.
+
+   La foto es un <img> de verdad, no un recuadro vacio. Canva importa el
+   img como foto reemplazable —se cambia arrastrando otra encima— y en
+   cambio un recuadro sin fondo lo tira al importar. El marco es el
+   rectangulo de atras, desplazado: ese si sobrevive porque tiene fondo.
+   --------------------------------------------------------------------- */
+.marco{position:relative;z-index:3;width:100%;height:380px;margin-top:36px}
+.marco.bajo{height:290px}
+.marco-fondo{position:absolute;left:22px;top:22px;right:-22px;bottom:-22px}
+.clara .marco-fondo{background:var(--azul)}
+.oscura .marco-fondo{background:var(--azul-hondo)}
+.marco img{position:relative;z-index:2;width:100%;height:100%;object-fit:cover;display:block}
+.marco-pie{position:relative;z-index:3;margin-top:40px;font-size:18px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.clara .marco-pie{color:var(--gris)}
+.oscura .marco-pie{color:var(--gris2)}
+
 /* =====================================================================
    1 · EXPEDIENTE — la lámina se ve como el papel del que habla
    ===================================================================== */
@@ -254,7 +275,6 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-lista.clara .texto b{color:var(--tinta)} .v-lista.oscura .texto b{color:var(--papel)}
 .v-lista.cierre h2{font-size:84px;margin-top:auto}
 .v-lista.cierre .datos{margin-top:48px}
-
 </style>
 </head>
 <!-- ESTILO: lista | DESCRIPCION: Me embargaron la camioneta, ¿ya la perdí? Entre el embargo y el remate hay pasos: al bien se le pone un valor, ese avalúo se puede discutir si quedó bajo, después se publica la convocatoria y hasta ese momento todavía se puede detener. Mándanos la foto del oficio y vemos en qué parte vas. | HASHTAGS: #impuestos #sat #creditofiscal #defensafiscal #apizaco | PARA QUIEN: Contribuyente con un crédito fiscal firme al que ya le trabaron un vehículo, maquinaria o un inmueble, y que cree que del embargo al remate no hay nada que hacer. -->
@@ -273,6 +293,7 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 
 <section class="lamina v-lista clara" data-document-role="page" data-label="L3">
 <div class="avance"><span>Paso 2</span><span>de 4</span></div><div class="barra-avance"><span style="width:50%"></span></div>
+<div class="marco bajo"><span class="marco-fondo"></span><img src="https://raw.githubusercontent.com/Eliseoooxvq/gesg-carruseles/master/marketing/fotos/tinta/escritorio-persianas.jpg" alt="Escritorio de GESG en Chiautempan"></div>
 <div class="caja-grande"><span class="palomita-a"></span><span class="palomita-b"></span></div>
 <h2>Ese valor<br><em>se puede pelear</em></h2><p class="texto">Si te lo valuaron muy por debajo, hay forma de inconformarse. <b>No es automático</b>: se hace bien y a tiempo.</p>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">03 / 06</span></div></section>

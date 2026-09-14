@@ -58,6 +58,27 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .oscura .dir{color:var(--gris2)} .clara .dir{color:var(--gris)}
 
 
+
+/* ---------------------------------------------------------------------
+   MARCO DE FOTO — el hueco para que el post no se vea plano.
+   Va una vez por carrusel, en un interior y justo debajo del encabezado:
+   ahi es donde estos disenos tienen aire de sobra.
+
+   La foto es un <img> de verdad, no un recuadro vacio. Canva importa el
+   img como foto reemplazable —se cambia arrastrando otra encima— y en
+   cambio un recuadro sin fondo lo tira al importar. El marco es el
+   rectangulo de atras, desplazado: ese si sobrevive porque tiene fondo.
+   --------------------------------------------------------------------- */
+.marco{position:relative;z-index:3;width:100%;height:380px;margin-top:36px}
+.marco.bajo{height:290px}
+.marco-fondo{position:absolute;left:22px;top:22px;right:-22px;bottom:-22px}
+.clara .marco-fondo{background:var(--azul)}
+.oscura .marco-fondo{background:var(--azul-hondo)}
+.marco img{position:relative;z-index:2;width:100%;height:100%;object-fit:cover;display:block}
+.marco-pie{position:relative;z-index:3;margin-top:40px;font-size:18px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.clara .marco-pie{color:var(--gris)}
+.oscura .marco-pie{color:var(--gris2)}
+
 /* =====================================================================
    1 · EXPEDIENTE — la lámina se ve como el papel del que habla
    ===================================================================== */

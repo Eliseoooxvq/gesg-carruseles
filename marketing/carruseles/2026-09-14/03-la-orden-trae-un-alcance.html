@@ -67,6 +67,27 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .oscura .dir{color:var(--gris2)} .clara .dir{color:var(--gris)}
 
 
+
+/* ---------------------------------------------------------------------
+   MARCO DE FOTO — el hueco para que el post no se vea plano.
+   Va una vez por carrusel, en un interior y justo debajo del encabezado:
+   ahi es donde estos disenos tienen aire de sobra.
+
+   La foto es un <img> de verdad, no un recuadro vacio. Canva importa el
+   img como foto reemplazable —se cambia arrastrando otra encima— y en
+   cambio un recuadro sin fondo lo tira al importar. El marco es el
+   rectangulo de atras, desplazado: ese si sobrevive porque tiene fondo.
+   --------------------------------------------------------------------- */
+.marco{position:relative;z-index:3;width:100%;height:380px;margin-top:36px}
+.marco.bajo{height:290px}
+.marco-fondo{position:absolute;left:22px;top:22px;right:-22px;bottom:-22px}
+.clara .marco-fondo{background:var(--azul)}
+.oscura .marco-fondo{background:var(--azul-hondo)}
+.marco img{position:relative;z-index:2;width:100%;height:100%;object-fit:cover;display:block}
+.marco-pie{position:relative;z-index:3;margin-top:40px;font-size:18px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.clara .marco-pie{color:var(--gris)}
+.oscura .marco-pie{color:var(--gris2)}
+
 /* =====================================================================
    1 · EXPEDIENTE — la lámina se ve como el papel del que habla
    ===================================================================== */
@@ -254,7 +275,6 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-lista.clara .texto b{color:var(--tinta)} .v-lista.oscura .texto b{color:var(--papel)}
 .v-lista.cierre h2{font-size:84px;margin-top:auto}
 .v-lista.cierre .datos{margin-top:48px}
-
 </style>
 </head>
 <!-- ESTILO: oficio | DESCRIPCION: Me llegó una orden de visita del SAT, ¿me van a revisar todo? La orden no es una llave para todo tu negocio: ahí viene escrito qué contribuciones y qué periodo se revisan, y lo que te pidan tiene que caber dentro de eso. Mándanos la foto de la orden y te la traducimos. | HASHTAGS: #impuestos #sat #auditoria #defensafiscal #puebla | PARA QUIEN: Contribuyente al que le acaban de entregar una orden de visita domiciliaria y está juntando cajas de papeles de todos los años por si acaso. -->
@@ -274,6 +294,7 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 
 <section class="lamina v-oficio oscura" data-document-role="page" data-label="L3">
 <p class="rotulo"><span class="raya"></span><span>Frase 2 de 4</span></p>
+<div class="marco"><span class="marco-fondo"></span><img src="https://raw.githubusercontent.com/Eliseoooxvq/gesg-carruseles/master/marketing/fotos/natural/area-trabajo.jpg" alt="Area de trabajo de GESG en Chiautempan"></div>
 <div class="dice"><span class="etiqueta">Lo que dice</span><p class="frase">“…respecto de las contribuciones que se señalan…”</p></div>
 <div class="significa"><span class="etiqueta">Lo que significa</span><p class="frase">No te revisan todo.<br><b>Sólo lo que</b><br>ahí viene escrito.</p></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">03 / 06</span></div></section>

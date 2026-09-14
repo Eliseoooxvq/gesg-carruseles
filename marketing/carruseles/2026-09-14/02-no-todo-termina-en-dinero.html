@@ -67,6 +67,27 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .oscura .dir{color:var(--gris2)} .clara .dir{color:var(--gris)}
 
 
+
+/* ---------------------------------------------------------------------
+   MARCO DE FOTO — el hueco para que el post no se vea plano.
+   Va una vez por carrusel, en un interior y justo debajo del encabezado:
+   ahi es donde estos disenos tienen aire de sobra.
+
+   La foto es un <img> de verdad, no un recuadro vacio. Canva importa el
+   img como foto reemplazable —se cambia arrastrando otra encima— y en
+   cambio un recuadro sin fondo lo tira al importar. El marco es el
+   rectangulo de atras, desplazado: ese si sobrevive porque tiene fondo.
+   --------------------------------------------------------------------- */
+.marco{position:relative;z-index:3;width:100%;height:380px;margin-top:36px}
+.marco.bajo{height:290px}
+.marco-fondo{position:absolute;left:22px;top:22px;right:-22px;bottom:-22px}
+.clara .marco-fondo{background:var(--azul)}
+.oscura .marco-fondo{background:var(--azul-hondo)}
+.marco img{position:relative;z-index:2;width:100%;height:100%;object-fit:cover;display:block}
+.marco-pie{position:relative;z-index:3;margin-top:40px;font-size:18px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.clara .marco-pie{color:var(--gris)}
+.oscura .marco-pie{color:var(--gris2)}
+
 /* =====================================================================
    1 · EXPEDIENTE — la lámina se ve como el papel del que habla
    ===================================================================== */
@@ -254,7 +275,6 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-lista.clara .texto b{color:var(--tinta)} .v-lista.oscura .texto b{color:var(--papel)}
 .v-lista.cierre h2{font-size:84px;margin-top:auto}
 .v-lista.cierre .datos{margin-top:48px}
-
 </style>
 </head>
 <!-- ESTILO: chat | DESCRIPCION: ¿Un problema con el SAT puede pasar a algo más que pagar? No todos los asuntos fiscales son iguales: no es lo mismo una diferencia de cálculo que una factura de algo que no ocurrió, y tampoco es lo mismo estar señalado que haberle comprado a alguien señalado. Mándanos la captura o la foto del oficio y te decimos qué traes. | HASHTAGS: #impuestos #fiscalmexico #defensafiscal #facturacion #chiautempan | PARA QUIEN: Dueño de negocio al que le llegó algo del SAT y anda preguntando entre conocidos si esto "se puede poner feo", y que está a punto de contestar por el portal por su cuenta. -->
@@ -283,6 +303,7 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 <div class="globo entra">¿Y si el de la lista es mi proveedor?</div>
 <div class="globo sale">Ser cliente de alguien señalado no te pone en su lugar. <b>Son dos situaciones</b> y se atienden distinto.</div>
 </div>
+<div class="marco bajo"><span class="marco-fondo"></span><img src="https://raw.githubusercontent.com/Eliseoooxvq/gesg-carruseles/master/marketing/fotos/natural/recepcion.jpg" alt="Recepcion de GESG en Chiautempan"></div>
 <div class="hueco"><p class="paso">No es lo mismo</p><h2>Quién está<br><em>señalado</em></h2></div>
 <div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">03 / 06</span></div></section>
 

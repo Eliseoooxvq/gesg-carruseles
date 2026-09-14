@@ -74,6 +74,32 @@ Cuéntalos. Si un renglón se pasa, en Canva se sale de la lámina.
 - Nunca fotos de internet, de bancos de imágenes ni generadas. Son las de la oficina real o ninguna.
 - Cada `<img>` lleva un `alt` que diga qué se ve.
 
+## 6 bis. El marco de foto — para que no se vean planos
+
+**Cada carrusel lleva UN marco de foto en un interior**, normalmente la lámina 3,
+justo debajo del encabezado: ahí es donde estos diseños tienen aire de sobra.
+
+La única excepción es el estilo **foto**, que ya trae foto a sangre en la portada
+y foto a color en el cierre. Ése no lleva marco.
+
+Se escribe así, y la foto es un `<img>` de verdad, nunca un recuadro vacío:
+
+```html
+<div class="marco"><span class="marco-fondo"></span><img src="https://raw.githubusercontent.com/Eliseoooxvq/gesg-carruseles/master/marketing/fotos/natural/recepcion.jpg" alt="Recepción de GESG en Chiautempan"></div>
+```
+
+- En lámina **oscura** va la de `natural/` (a color): contrasta con el fondo azul.
+- En lámina **clara** va la de `tinta/` (duotono oscuro): contrasta con el papel.
+- En **chat, dato y lista** se usa `class="marco bajo"`, que es más bajo y no
+  empuja el texto fuera de la lámina. En expediente y oficio cabe el normal.
+- Va **después del encabezado** —`.oficio`, `.rotulo`, el `.hilo` del chat o la
+  `.barra-avance` de lista— y **antes** del bloque de contenido: `.hueco`,
+  `.dice`, `.caja-grande` o `.cifra`.
+- La foto no se repite con ninguna otra del mismo día.
+- Un recuadro vacío NO sirve: Canva descarta al importar los elementos que no
+  tienen fondo. Con la foto puesta nunca se ve un hueco, y en Canva se cambia
+  arrastrando otra encima.
+
 ## 7. Qué se anota
 
 - En `LISTA.md` del día, dos columnas más: **Estilo** y **Foto** (o "—").

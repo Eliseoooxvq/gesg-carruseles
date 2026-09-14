@@ -67,6 +67,27 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .oscura .dir{color:var(--gris2)} .clara .dir{color:var(--gris)}
 
 
+
+/* ---------------------------------------------------------------------
+   MARCO DE FOTO — el hueco para que el post no se vea plano.
+   Va una vez por carrusel, en un interior y justo debajo del encabezado:
+   ahi es donde estos disenos tienen aire de sobra.
+
+   La foto es un <img> de verdad, no un recuadro vacio. Canva importa el
+   img como foto reemplazable —se cambia arrastrando otra encima— y en
+   cambio un recuadro sin fondo lo tira al importar. El marco es el
+   rectangulo de atras, desplazado: ese si sobrevive porque tiene fondo.
+   --------------------------------------------------------------------- */
+.marco{position:relative;z-index:3;width:100%;height:380px;margin-top:36px}
+.marco.bajo{height:290px}
+.marco-fondo{position:absolute;left:22px;top:22px;right:-22px;bottom:-22px}
+.clara .marco-fondo{background:var(--azul)}
+.oscura .marco-fondo{background:var(--azul-hondo)}
+.marco img{position:relative;z-index:2;width:100%;height:100%;object-fit:cover;display:block}
+.marco-pie{position:relative;z-index:3;margin-top:40px;font-size:18px;font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.clara .marco-pie{color:var(--gris)}
+.oscura .marco-pie{color:var(--gris2)}
+
 /* =====================================================================
    1 · EXPEDIENTE — la lámina se ve como el papel del que habla
    ===================================================================== */
@@ -254,7 +275,6 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 .v-lista.clara .texto b{color:var(--tinta)} .v-lista.oscura .texto b{color:var(--papel)}
 .v-lista.cierre h2{font-size:84px;margin-top:auto}
 .v-lista.cierre .datos{margin-top:48px}
-
 </style>
 </head>
 <!-- ESTILO: expediente | DESCRIPCION: Me llegó una cédula de liquidación del IMSS. El IMSS no manda su cobro al SAT: cobra por su cuenta, con su propio procedimiento, y el Infonavit va por el mismo camino, así que pueden ser tres cobros distintos y cada uno se atiende por su lado. Mándanos la foto del papel y te decimos qué es. | HASHTAGS: #impuestos #sat #defensafiscal #nomina #tlaxcala | PARA QUIEN: Patrón chico de Tlaxcala o Puebla con dos o tres trabajadores dados de alta, que cree que todo lo fiscal es el SAT y guarda los papeles del IMSS pensando que son avisos. -->
@@ -272,6 +292,7 @@ body{background:#1A222C;font-family:'Inter',sans-serif;display:flex;flex-directi
 
 <section class="lamina v-expediente oscura" data-document-role="page" data-label="L3">
 <div class="oficio">Expediente <span class="tachon"></span> &nbsp;&middot;&nbsp; Chiautempan, Tlax.<span class="via">En trámite</span></div>
+<div class="marco"><span class="marco-fondo"></span><img src="https://raw.githubusercontent.com/Eliseoooxvq/gesg-carruseles/master/marketing/fotos/natural/muro-logo.jpg" alt="Muro del despacho de GESG en Chiautempan"></div>
 <div class="hueco"><p class="paso"><span class="raya"></span><span>Por dónde empieza</span></p><h2>Primero llega<br>una cédula<br><em>de liquidación</em></h2><p class="texto">Es el papel donde dice cuánto cree que le debes. <b>Ahí arranca todo</b>, aunque tú todavía no lo hayas leído bien.</p></div>
 <div class="perfil"></div><div class="pie"><span><b>GESG</b> &middot; Defensa fiscal</span><span class="folio">03 / 06</span></div></section>
 
