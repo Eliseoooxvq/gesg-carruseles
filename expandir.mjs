@@ -117,7 +117,7 @@ const PLANTILLA = {
   dato: (c, k, n, tono, foto) =>
     '<section class="lamina v-dato ' + tono + ' interior" data-document-role="page" data-label="L' + n + '">\n' +
     '<p class="rotulo"><span class="raya"></span><span>' + c.rotulo + '</span></p>\n' +
-    (foto === null ? '' : marco(foto) + '\n') +
+    (foto === null ? '' : marco(foto, true) + '\n') +
     (c.cifra ? '<div class="cifra">' + cifra(c.cifra) + '</div>\n' : '') +
     '<h2>' + titulo(c.h2) + '</h2>' + (c.texto ? '<p class="texto">' + c.texto + '</p>' : '') + '\n' +
     pie(c.area, n),

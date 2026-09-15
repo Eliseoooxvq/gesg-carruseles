@@ -183,3 +183,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-14 · CT · Tu RFC dice una cosa y tú haces otra (actividad registrada vs. lo que facturas) [foto]
 - 2026-09-14 · CT · El aguinaldo no se junta en diciembre (retención, clave en el CFDI, parte exenta) [lista]
 - 2026-09-14 · CT · Vendiste el terreno y falta un pago (la retención del notario es a cuenta) [foto]
+
+### Archivos HTML por carrusel — carpeta 2026-09-15/
+
+- 2026-09-15 · DF · Te pueden negar el alta en el RFC por estar ligado a alguien de riesgo fiscal [chat]
+- 2026-09-15 · DF · En la visita pueden tomar fotos y grabar audio y video, y lo que digas queda en el expediente [expediente]
+- 2026-09-15 · DF · Como persona física no hay pared: la deuda del negocio la pagan tus cosas de casa [oficio]
+- 2026-09-15 · DF · El cobro se va contra lo que tus clientes te deben, y a ellos les ordenan pagarle a la autoridad [expediente]
+- 2026-09-15 · DF · En el embargo anotaron algo que no era tuyo (bien de un tercero o comprado a meses) [lista]
+- 2026-09-15 · CT · 7% de IVA opcional para negocios chicos del régimen simplificado (propuesta del Paquete 2027) [dato]
+- 2026-09-15 · CT · La terminal se queda su comisión: declaras la venta completa y la comisión sólo con factura [lista]
+- 2026-09-15 · CT · Te pusiste en tu propia nómina y ese sueldo no baja el impuesto (persona física) [foto]
+- 2026-09-15 · CT · Metiste dinero de tu bolsa al negocio y sin papel se ve como venta [chat]
+- 2026-09-15 · CT · La cooperación de la escuela o de la feria no es donativo deducible [foto]
