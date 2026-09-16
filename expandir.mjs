@@ -210,6 +210,7 @@ for (const c of datos.carruseles) {
 
   let cierre = rellenar(secs[secs.length - 1], c.cierre.campos, c.n + ' cierre');
   cierre = cierre.replace(/<span class="folio">[^<]*<\/span>/, '<span class="folio">' + folio(TOTAL) + '</span>');
+  cierre = cierre.replace(/data-label="L\d+ cierre"/, 'data-label="L' + TOTAL + ' cierre"');
 
   // Las ocho interiores, nuevas.
   const hazla = PLANTILLA[c.estilo];

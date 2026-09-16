@@ -196,3 +196,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-15 · CT · Te pusiste en tu propia nómina y ese sueldo no baja el impuesto (persona física) [foto]
 - 2026-09-15 · CT · Metiste dinero de tu bolsa al negocio y sin papel se ve como venta [chat]
 - 2026-09-15 · CT · La cooperación de la escuela o de la feria no es donativo deducible [foto]
+
+### Archivos HTML por carrusel — carpeta 2026-09-16/
+
+- 2026-09-16 · DF · Le prestó la cuenta de banco a un compadre y los depósitos se le contaron como venta suya [expediente]
+- 2026-09-16 · DF · Te devolvieron el saldo a favor y después te lo cobran de regreso (devolución improcedente) [oficio]
+- 2026-09-16 · DF · Pagaste la multa por no declarar y el impuesto de ese periodo sigue vivo por su lado [chat]
+- 2026-09-16 · DF · No diste la baja en el IMSS y las cuotas de un trabajador que ya se fue siguieron corriendo [expediente]
+- 2026-09-16 · DF · Multa de hasta 11,540 pesos desde enero de 2027 por el buzón tributario y los medios de contacto sin actualizar [dato]
+- 2026-09-16 · CT · Remodelaste el local que rentas: es inversión, no gasto del mes, y las mejoras se quedan ahí [lista]
+- 2026-09-16 · CT · Se te echó a perder o caducó la mercancía: sin lista, fotos y aviso no se resta [foto]
+- 2026-09-16 · CT · Las propinas que tú juntas y repartes van en el recibo de nómina de tus trabajadores [lista]
+- 2026-09-16 · CT · Tu proveedor canceló una factura que tú ya habías restado y el cruce lo saca solo [chat]
+- 2026-09-16 · CT · Abriste otro punto de venta o una bodega y no diste de alta ese domicilio en tu RFC [foto]
