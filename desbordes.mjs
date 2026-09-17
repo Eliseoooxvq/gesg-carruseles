@@ -7,9 +7,18 @@ import { execFileSync } from 'node:child_process';
 
 const S = process.cwd();
 const CHROME = [
+  process.env.CHROME,
   'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
   'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
-].find((p) => fs.existsSync(p));
+  '/opt/pw-browsers/chromium',
+  '/usr/bin/chromium',
+  '/usr/bin/chromium-browser',
+  '/usr/bin/google-chrome',
+].filter(Boolean).find((p) => fs.existsSync(p));
+if (!CHROME) {
+  console.log('  no encontre Chrome. Pon la ruta en la variable CHROME.');
+  process.exit(1);
+}
 
 /* Hay que medir DESPUES de que bajen la tipografia y las fotos: si se mide
    antes, el texto ocupa otro alto y el reporte sale distinto cada vez. */
@@ -73,7 +82,7 @@ const tmp = path.join(S, '_medir.html');
 fs.writeFileSync(tmp, conSonda);
 
 const dom = execFileSync(CHROME, [
-  '--headless=new', '--disable-gpu', '--allow-file-access-from-files',
+  '--headless=new', '--disable-gpu', '--no-sandbox', '--allow-file-access-from-files',
   '--virtual-time-budget=20000', '--dump-dom', 'file:///' + tmp.replace(/\\/g, '/'),
 ], { encoding: 'utf8', maxBuffer: 1024 * 1024 * 64 });
 

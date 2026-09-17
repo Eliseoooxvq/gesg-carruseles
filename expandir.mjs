@@ -101,7 +101,7 @@ const PLANTILLA = {
     '<p class="rotulo"><span class="raya"></span><span>' + c.rotulo + '</span></p>\n' +
     (foto === null ? '' : marco(foto) + '\n') +
     (c.cita ? '<div class="dice"><span class="etiqueta">Lo que dice tu papel</span><p class="frase">' + c.cita + '</p></div>\n' : '') +
-    '<div class="significa"><span class="etiqueta">' + (c.cita ? 'Qué te está diciendo' : 'Lo que pasó') + '</span>' +
+    '<div class="significa"><span class="etiqueta">' + (c.etiqueta || (c.cita ? 'Qué te está diciendo' : 'Lo que pasó')) + '</span>' +
     '<p class="frase">' + c.traduccion + '</p></div>\n' +
     pie(c.area, n),
 

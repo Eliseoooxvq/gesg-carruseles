@@ -209,3 +209,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-16 · CT · Las propinas que tú juntas y repartes van en el recibo de nómina de tus trabajadores [lista]
 - 2026-09-16 · CT · Tu proveedor canceló una factura que tú ya habías restado y el cruce lo saca solo [chat]
 - 2026-09-16 · CT · Abriste otro punto de venta o una bodega y no diste de alta ese domicilio en tu RFC [foto]
+
+### Archivos HTML por carrusel — carpeta 2026-09-17/
+
+- 2026-09-17 · DF · Le pidieron facturar un trabajo que no hizo: al que emite la factura sin venta atrás también le piden probarla [chat]
+- 2026-09-17 · DF · Trae mercancía de fuera sin el papel de entrada al país y se la pueden dejar detenida [expediente]
+- 2026-09-17 · DF · Pidió su devolución y se la aplicaron a una multa vieja que nunca peleó [oficio]
+- 2026-09-17 · DF · Vino el inspector del IMSS, contó a la gente del local y le calcularon las cuotas hacia atrás [expediente]
+- 2026-09-17 · DF · Le dio su e.firma al contador y lo que se firmó con ella lo firmó él [lista]
+- 2026-09-17 · CT · Su trabajador le factura cada mes en vez de estar en nómina y esas facturas no se deducen [foto]
+- 2026-09-17 · CT · 0.68% sería la retención del banco sobre lo que tienes guardado, y ese descuento va a cuenta (Paquete 2027) [dato]
+- 2026-09-17 · CT · Las recargas y los pagos de servicios que cobra por cuenta de otro: su venta es la comisión [chat]
+- 2026-09-17 · CT · La factura se hace cuando vendes, no en enero cuando el cliente se acuerda [lista]
+- 2026-09-17 · CT · Compró la camioneta a un particular con hoja de compraventa y sin comprobante no la deduce [foto]
