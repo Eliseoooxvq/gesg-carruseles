@@ -55,6 +55,15 @@ function medir() {
       }
     }
   }
+  // Si la letra buena o alguna foto no cargo, el reporte no vale: hay que decirlo.
+  if (!document.fonts.check('16px Fraunces') || !document.fonts.check('16px Inter')) {
+    salida.unshift('AVISO | no cargo la tipografia buena, esta medida no sirve');
+  }
+  var rotas = Array.prototype.slice.call(document.images)
+    .filter(function (im) { return !im.complete || im.naturalWidth === 0; });
+  if (rotas.length) {
+    salida.unshift('AVISO | ' + rotas.length + ' fotos no cargaron, esta medida no sirve');
+  }
   var m = document.createElement('div');
   m.id = 'REPORTE-DESBORDES';
   m.textContent = salida.length ? salida.join(' @@ ') : 'SIN DESBORDES';
@@ -76,13 +85,28 @@ window.addEventListener('load', function () {
 `;
 
 const fuente = process.argv[2] || path.join(S, 'todas.html');
-const html = fs.readFileSync(fuente, 'utf8');
+let html = fs.readFileSync(fuente, 'utf8');
+
+/* Las fotos se miden desde el disco, no desde GitHub: las del dia todavia no
+   estan subidas y ademas asi el medidor no depende de la red. Si una foto no
+   esta en la carpeta se deja la URL, para que se note que falta. */
+const RAW = 'https://raw.githubusercontent.com/Eliseoooxvq/gesg-carruseles/master/marketing/fotos/';
+html = html.replace(new RegExp(RAW + '([a-z0-9-]+)/([a-z0-9-]+)\\.jpg', 'g'), (url, carpeta, foto) => {
+  const local = path.join(S, 'marketing/fotos', carpeta, foto + '.jpg');
+  return fs.existsSync(local) ? 'file:///' + local.replace(/\\/g, '/') : url;
+});
+
 const conSonda = html.replace('</head>', SONDA + '</head>');
 const tmp = path.join(S, '_medir.html');
 fs.writeFileSync(tmp, conSonda);
 
+/* La tipografia sigue bajandose de Google Fonts, y en entornos con proxy hay
+   que decirselo a Chrome o mide con la letra de repuesto y el reporte miente. */
+const PROXY = process.env.HTTPS_PROXY || process.env.https_proxy;
+
 const dom = execFileSync(CHROME, [
   '--headless=new', '--disable-gpu', '--no-sandbox', '--allow-file-access-from-files',
+  ...(PROXY ? ['--proxy-server=' + PROXY] : []),
   '--virtual-time-budget=20000', '--dump-dom', 'file:///' + tmp.replace(/\\/g, '/'),
 ], { encoding: 'utf8', maxBuffer: 1024 * 1024 * 64 });
 

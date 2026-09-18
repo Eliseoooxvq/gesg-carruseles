@@ -222,3 +222,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-17 · CT · Las recargas y los pagos de servicios que cobra por cuenta de otro: su venta es la comisión [chat]
 - 2026-09-17 · CT · La factura se hace cuando vendes, no en enero cuando el cliente se acuerda [lista]
 - 2026-09-17 · CT · Compró la camioneta a un particular con hoja de compraventa y sin comprobante no la deduce [foto]
+
+### Archivos HTML por carrusel — carpeta 2026-09-18/
+
+- 2026-09-18 · DF · Puso el segundo negocio a nombre de su esposa y las ventas siguieron siendo suyas [expediente]
+- 2026-09-18 · DF · Les descontó el impuesto a sus trabajadores y el contador nunca lo pagó: el cobro es del patrón [oficio]
+- 2026-09-18 · DF · Le dio cancelar en el portal y la factura nunca quedó cancelada: sin motivo ni folio no procede [chat]
+- 2026-09-18 · DF · Dio de alta en el IMSS a un familiar que no trabaja con él y le dieron de baja el alta con multa [lista]
+- 2026-09-18 · DF · Lleva años vendiendo sin RFC y lo inscribieron de oficio con lo de atrás encima [expediente]
+- 2026-09-18 · CT · 1 millón quedaría libre de impuesto para quien vive del campo, hoy son 900 mil (Paquete 2027) [dato]
+- 2026-09-18 · CT · Compró el local y el terreno no se deduce: en la escritura van dos cosas distintas [foto]
+- 2026-09-18 · CT · Les da despensa por fuera del recibo de nómina y no se la deducen, y además es sueldo [chat]
+- 2026-09-18 · CT · Le robaron y el seguro le pagó: ese depósito es ingreso y la pérdida hay que probarla [oficio]
+- 2026-09-18 · CT · Le pagó al mecánico con mercancía: el cambalache son dos ventas y cada quien factura la suya [lista]
