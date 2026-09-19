@@ -235,3 +235,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-18 · CT · Les da despensa por fuera del recibo de nómina y no se la deducen, y además es sueldo [chat]
 - 2026-09-18 · CT · Le robaron y el seguro le pagó: ese depósito es ingreso y la pérdida hay que probarla [oficio]
 - 2026-09-18 · CT · Le pagó al mecánico con mercancía: el cambalache son dos ventas y cada quien factura la suya [lista]
+
+### Archivos HTML por carrusel — carpeta 2026-09-19/
+
+- 2026-09-19 · DF · Nunca avisó de un accidente de sus trabajadores y el IMSS le acomodó la prima de riesgo más alta, con las diferencias de atrás [oficio]
+- 2026-09-19 · DF · Le siguió poniendo el subsidio al empleo a un trabajador al que ya no le tocaba y el SAT se lo cobra al patrón [expediente]
+- 2026-09-19 · DF · Abrió sucursal en Puebla y el impuesto estatal de nómina se paga en cada estado donde trabaja su gente [chat]
+- 2026-09-19 · DF · Cerró tres días por la feria, fueron a verificar su domicilio, no había nadie y quedó como no localizado [expediente]
+- 2026-09-19 · DF · Renta el cuarto de arriba y nunca lo declaró: al inquilino le descuentan y ese papel va con su RFC al SAT [lista]
+- 2026-09-19 · CT · 0.92 pesos traerá cada cigarro de impuesto en 2027: ese impuesto viene en tu costo y no se resta como el IVA [dato]
+- 2026-09-19 · CT · Compró mercancía a meses con la tarjeta y la fue restando mensualidad por mensualidad: la compra cuenta una vez [foto]
+- 2026-09-19 · CT · El recibo de la luz del local sigue a nombre del casero, él lo paga y no se lo puede restar [chat]
+- 2026-09-19 · CT · Invitó de comer al cliente: del consumo en restaurante sólo cuenta una parte chica, y en efectivo nada [lista]
+- 2026-09-19 · CT · Pagó multas de tránsito de la camioneta del reparto y las metió a gastos: ninguna multa se resta [oficio]
