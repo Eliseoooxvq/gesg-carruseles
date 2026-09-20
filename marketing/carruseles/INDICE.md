@@ -248,3 +248,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-19 · CT · El recibo de la luz del local sigue a nombre del casero, él lo paga y no se lo puede restar [chat]
 - 2026-09-19 · CT · Invitó de comer al cliente: del consumo en restaurante sólo cuenta una parte chica, y en efectivo nada [lista]
 - 2026-09-19 · CT · Pagó multas de tránsito de la camioneta del reparto y las metió a gastos: ninguna multa se resta [oficio]
+
+### Archivos HTML por carrusel — carpeta 2026-09-20/
+
+- 2026-09-20 · DF · Metió a un muchacho a prueba sin darlo de alta, se lastimó y el IMSS le cobró al patrón lo que costó atenderlo [expediente]
+- 2026-09-20 · DF · Compra y vende carros usados: ese giro además pide alta en un padrón, identificar al cliente y avisos, y ahí la multa va por cada aviso que faltó [oficio]
+- 2026-09-20 · DF · Amplió su local con albañiles por su cuenta y nunca registró la obra: el IMSS la calculó por su lado y le mandó el cobro [chat]
+- 2026-09-20 · DF · Vendió la casa donde vivía y no pudo probarlo con recibos a su nombre: el notario le retuvo el impuesto en la firma [expediente]
+- 2026-09-20 · DF · 600 mil pesos al año en préstamos, regalos y premios: pasando de ahí va en tu declaración, y lo que no se informa se vuelve ingreso [dato]
+- 2026-09-20 · CT · El proveedor le deja producto a vender: esa mercancía todavía no es suya y la factura sale cuando se vende, no cuando llega [foto]
+- 2026-09-20 · CT · Agarra mercancía de su propia tienda para su casa: eso cuenta como si la hubiera vendido y le abre un hoyo en el inventario [lista]
+- 2026-09-20 · CT · El local es suyo y se puso la renta como gasto: nadie puede rentarse a sí mismo y esa resta se cae [chat]
+- 2026-09-20 · CT · El apoyo en dinero, el refrigerador y las cajas de cortesía del proveedor son ingreso suyo y se facturan [oficio]
+- 2026-09-20 · CT · Le pagaron desde la cuenta de otra persona: el pago tiene que salir de quien aparece en la factura [lista]

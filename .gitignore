@@ -5,3 +5,9 @@ salida/
 # Nunca, en un repositorio publico.
 .env*
 .claude/settings.local.json
+
+# Insumos del dia para el generador: se escriben cada manana, no son del repositorio.
+base.json
+detalle.json
+todas.html
+_medir.html
