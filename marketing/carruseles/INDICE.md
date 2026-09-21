@@ -261,3 +261,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-20 · CT · El local es suyo y se puso la renta como gasto: nadie puede rentarse a sí mismo y esa resta se cae [chat]
 - 2026-09-20 · CT · El apoyo en dinero, el refrigerador y las cajas de cortesía del proveedor son ingreso suyo y se facturan [oficio]
 - 2026-09-20 · CT · Le pagaron desde la cuenta de otra persona: el pago tiene que salir de quien aparece en la factura [lista]
+
+### Archivos HTML por carrusel — carpeta 2026-09-21/
+
+- 2026-09-21 · DF · Tiró las cajas de facturas viejas y le pidieron justo ese año: sin papeles, la autoridad saca la cuenta con los depósitos del banco y las facturas de sus proveedores [oficio]
+- 2026-09-21 · DF · Cerró, lo suspendieron y volvió a abrir sin avisar la reanudación: el RFC seguía dormido y los depósitos sí se veían [chat]
+- 2026-09-21 · DF · Un trabajador suyo sacó su crédito de vivienda y él nunca se lo descontó de la raya: el Infonavit le cobra al patrón lo omitido, con recargos [expediente]
+- 2026-09-21 · DF · Pagó su adeudo y el terreno seguía trabado en el registro: el levantamiento del embargo se pide, no se quita solo [oficio]
+- 2026-09-21 · DF · Declaró a tiempo y dejó la línea de captura en el cajón: presentar y pagar son dos cosas, y el acuse no prueba el pago [expediente]
+- 2026-09-21 · CT · 85.2% de las compras chicas en México se pagan en efectivo (ENIF 2024): la Ley de Economía Digital que se discute va por ahí, y lo que cobras digital deja rastro [dato]
+- 2026-09-21 · CT · Le pagaron en dólares desde el extranjero: es ingreso, se factura y se pasa a pesos con el tipo de cambio del día del cobro [foto]
+- 2026-09-21 · CT · El negocio es de dos socios y factura uno solo: al que factura le cuentan la venta completa, y de palabra no se reparte [chat]
+- 2026-09-21 · CT · Pagó puntual cada mes y en la declaración del año le salió diferencia: los pagos del mes son adelantos y la cuenta se hace con el año completo [lista]
+- 2026-09-21 · CT · Le da comisión en efectivo al que le manda clientes y sin factura ni recibo de nómina ese gasto no se resta [foto]
