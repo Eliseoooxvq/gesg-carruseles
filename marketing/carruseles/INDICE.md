@@ -274,3 +274,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-21 · CT · El negocio es de dos socios y factura uno solo: al que factura le cuentan la venta completa, y de palabra no se reparte [chat]
 - 2026-09-21 · CT · Pagó puntual cada mes y en la declaración del año le salió diferencia: los pagos del mes son adelantos y la cuenta se hace con el año completo [lista]
 - 2026-09-21 · CT · Le da comisión en efectivo al que le manda clientes y sin factura ni recibo de nómina ese gasto no se resta [foto]
+
+### Archivos HTML por carrusel — carpeta 2026-09-22/
+
+- 2026-09-22 · DF · Se quedaron varios días en su negocio anotando cada venta del mostrador: con el promedio de esos días le armaron el periodo completo [expediente]
+- 2026-09-22 · DF · 2% del adeudo se suma como gastos de ejecución por cada diligencia del cobro: te cobran por cobrarte y eso no venía en la deuda [dato]
+- 2026-09-22 · DF · Mandó a su hijo a atender la cita del SAT sin un poder en forma y la diligencia quedó como no atendida [chat]
+- 2026-09-22 · DF · Pidió pagar su adeudo en abonos y le dijeron que no: el IVA que cobró y lo que le descontó a su gente no entra en parcialidades [oficio]
+- 2026-09-22 · DF · Pagó dos veces la misma línea de captura: el pago de lo indebido no se acredita solo, se pide, y nadie te avisa que ahí está [expediente]
+- 2026-09-22 · CT · Le pidieron factura de un pedido grande y el IVA salió de su ganancia: el precio de mostrador ya lo trae adentro [foto]
+- 2026-09-22 · CT · Guardó los PDF impresos y nunca los XML: sin el archivo, esas compras no se pudieron restar [lista]
+- 2026-09-22 · CT · Vende por Facebook y WhatsApp y le depositan a su cuenta personal: ahí nadie te retiene nada y el impuesto completo es tuyo [chat]
+- 2026-09-22 · CT · Su tiendita empezó a vender tortas y café: preparado y listo para comerse cambia de tasa, y él pagó ese IVA de su bolsa [foto]
+- 2026-09-22 · CT · Facturó poquito a propósito todo el año y el banco le prestó por lo que declaró, no por lo que vende: perdió el local [lista]
