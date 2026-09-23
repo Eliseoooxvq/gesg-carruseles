@@ -287,3 +287,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-22 · CT · Vende por Facebook y WhatsApp y le depositan a su cuenta personal: ahí nadie te retiene nada y el impuesto completo es tuyo [chat]
 - 2026-09-22 · CT · Su tiendita empezó a vender tortas y café: preparado y listo para comerse cambia de tasa, y él pagó ese IVA de su bolsa [foto]
 - 2026-09-22 · CT · Facturó poquito a propósito todo el año y el banco le prestó por lo que declaró, no por lo que vende: perdió el local [lista]
+
+### Archivos HTML por carrusel — carpeta 2026-09-23/
+
+- 2026-09-23 · DF · Dejó de presentar los meses en que no tuvo para pagar: presentarlas tú antes de que te las pidan no trae multa, y después va una por cada mes [dato]
+- 2026-09-23 · DF · Se quedó callado mientras lo revisaban: corregirse antes de que cierren el acta deja la multa más baja, después ya no [oficio]
+- 2026-09-23 · DF · El bono de puntualidad y las comisiones suben lo que se paga de IMSS, y las diferencias de atrás se las cobraron [expediente]
+- 2026-09-23 · DF · Entró de socio con un conocido, se salió de palabra y años después el cobro de la empresa le llegó a su nombre [chat]
+- 2026-09-23 · DF · Le querían pagar el terreno todo en efectivo: pasando cierto monto esa compraventa no se liquida así y el notario tiene que anotar cómo pagaron [expediente]
+- 2026-09-23 · CT · Tuvo un mes bueno, rebasó el tope del RESICO y desde el mes siguiente ya no le tocaba ese régimen [foto]
+- 2026-09-23 · CT · Cobra el envío aparte y se lo pasa al repartidor: ese cobro es venta suya y sin comprobante del repartidor no lo resta [chat]
+- 2026-09-23 · CT · Pagó el permiso del municipio para su puesto de temporada y creyó que ya estaba en regla: ese papel no lo da de alta [lista]
+- 2026-09-23 · CT · Traspasó su changarro, cobró el traspaso y se dio de baja: con el RFC cerrado ya no pudo hacer la factura que le pidieron [foto]
+- 2026-09-23 · CT · Metió como gasto el depósito del local nuevo: ese dinero sigue siendo suyo y lo que no se gasta no se resta [lista]
