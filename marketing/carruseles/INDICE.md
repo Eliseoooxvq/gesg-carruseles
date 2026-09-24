@@ -300,3 +300,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-23 · CT · Pagó el permiso del municipio para su puesto de temporada y creyó que ya estaba en regla: ese papel no lo da de alta [lista]
 - 2026-09-23 · CT · Traspasó su changarro, cobró el traspaso y se dio de baja: con el RFC cerrado ya no pudo hacer la factura que le pidieron [foto]
 - 2026-09-23 · CT · Metió como gasto el depósito del local nuevo: ese dinero sigue siendo suyo y lo que no se gasta no se resta [lista]
+
+### Archivos HTML por carrusel — carpeta 2026-09-24/
+
+- 2026-09-24 · DF · No le quiso dar factura a un cliente que se la pidió, era una visita de verificación y le pusieron sellos en la cortina unos días [expediente]
+- 2026-09-24 · DF · Pagó la multa y creyó que ya estaba: la multa y el impuesto que te cobran son dos cobros distintos, y el que quedó vivo le trabó la cuenta [chat]
+- 2026-09-24 · DF · Le llegó un oficio pidiéndole los papeles de un cliente al que están revisando: a él no lo revisaban, y por no contestar le multaron [oficio]
+- 2026-09-24 · DF · Se brincó un abono del convenio de parcialidades y perdió el descuento completo: el adeudo volvió a estar entero [expediente]
+- 2026-09-24 · DF · El impuesto de nómina lo cobra el estado, no el SAT, y el aviso se presenta aunque el mes no haya tenido trabajadores [lista]
+- 2026-09-24 · CT · Le agregó café y comida a su tiendita y nunca actualizó las actividades de su RFC: las compras de ese giro se le cayeron [foto]
+- 2026-09-24 · CT · Cambió trabajo por trabajo con un conocido y quedaron a mano: ahí hubo dos ventas y las dos se facturan aunque no pase dinero [chat]
+- 2026-09-24 · CT · 2 mil pesos: pasando de ahí, el gasto pagado en efectivo no se resta, y en gasolina el pago va por banco aunque sea poquito [dato]
+- 2026-09-24 · CT · Le surtieron a crédito y restó la compra en el mes de la factura: el gasto se resta cuando sale el dinero, no cuando llega el papel [foto]
+- 2026-09-24 · CT · Guardó un año de tickets, notas y recibos de mano: sólo se resta lo que viene en factura, y pasado el año ya no se la hacen [lista]
