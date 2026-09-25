@@ -313,3 +313,16 @@ repetición y no cuenta, aunque el título cambie.
 - 2026-09-24 · CT · 2 mil pesos: pasando de ahí, el gasto pagado en efectivo no se resta, y en gasolina el pago va por banco aunque sea poquito [dato]
 - 2026-09-24 · CT · Le surtieron a crédito y restó la compra en el mes de la factura: el gasto se resta cuando sale el dinero, no cuando llega el papel [foto]
 - 2026-09-24 · CT · Guardó un año de tickets, notas y recibos de mano: sólo se resta lo que viene en factura, y pasado el año ya no se la hacen [lista]
+
+### Archivos HTML por carrusel — carpeta 2026-09-25/
+
+- 2026-09-25 · DF · Un competidor lo denunció con el SAT: la denuncia se hace sin dar la cara y lo que revisan después no es ella, son sus depósitos y sus facturas, que ya estaban ahí [chat]
+- 2026-09-25 · DF · Le prestaron trabajadores sin el registro que pide la ley: esas facturas no se restan y las cuotas de esa gente se las cobraron a él [oficio]
+- 2026-09-25 · DF · Llegaron a señalar bienes y él se quedó callado: la cama, la ropa, los muebles de diario y las herramientas del oficio la ley los deja fuera, y eso se dice en el momento [lista]
+- 2026-09-25 · DF · La revisión que se hace sola con sus propias facturas: le llegó una resolución provisional con la cuenta ya hecha y al no contestarla se volvió el cobro [oficio]
+- 2026-09-25 · DF · Le cobraron un año viejo con una cantidad que no le cuadraba y pagó sin preguntar: ese número sale de un expediente del que se puede pedir copia completa [expediente]
+- 2026-09-25 · CT · Quien vive del campo puede restar sin factura la ayuda de temporada, el alimento de los animales y los gastos chicos, hasta diez de cada cien pesos que ingresa y con tope [foto]
+- 2026-09-25 · CT · 14 datos pide hoy el registro patronal del IMSS para un negocio chico, contra ochenta de antes: el trámite ya no es el que le contaron [dato]
+- 2026-09-25 · CT · Hizo 2x1 y facturó sólo la pieza que cobró, y lo que regaló en la feria no dejó rastro: la mercancía que sale sin papel se cuenta como vendida [chat]
+- 2026-09-25 · CT · Le adelantó la raya a sus muchachos de palabra: mientras no vaya en el recibo de nómina es préstamo, no gasto, y no se resta [lista]
+- 2026-09-25 · CT · Pagó el predial del local que renta y lo metió a sus gastos: ese cobro es del dueño del inmueble y el recibo no viene a su nombre [foto]
